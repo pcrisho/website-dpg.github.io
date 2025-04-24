@@ -11,13 +11,13 @@ Explora todos mis proyectos en [mis repositorios](https://github.com/pcrisho?tab
 
 ## 📬 Integrantes del proyecto
 
-- ✉️ Crisóstomo Berrocal, Roberto Paolo [Repositorios](https://github.com/pcrisho?tab=repositories).
+- ✉️ Crisóstomo Berrocal, Roberto Paolo - [Repositorios](https://github.com/pcrisho?tab=repositories).
 - 💼 linkedin.com/in/paolo-crisostomo/
 
-- ✉️ Carpio Oliva, Alvaro Enrique [Repositorios](https://github.com/pcrisho?tab=repositories).
+- ✉️ Carpio Oliva, Alvaro Enrique - [Repositorios](https://github.com/pcrisho?tab=repositories).
 - 💼 linkedin.com/in/paolo-crisostomo/
 
-- ✉️ Torres Medrano, Cesar Alexander [Repositorios](https://github.com/pcrisho?tab=repositories).
+- ✉️ Torres Medrano, Cesar Alexander - [Repositorios](https://github.com/pcrisho?tab=repositories).
 - 💼 linkedin.com/in/paolo-crisostomo/
 
 ## 🛠️ Tecnologías y herramientas usadas en el proyecto

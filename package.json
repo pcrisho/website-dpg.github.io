@@ -1,12 +1,22 @@
 {
-    "name": "website-dpg",
-    "version": "1.0.0",
-    "description": "Sitio web orientado a estudiantes universitarios",
-    "scripts": {
-      "start": "live-server public"
-    },
-    "devDependencies": {},
-    "author": "Tu Nombre",
-    "license": "MIT"
-  }
-  
+  "name": "website-dpg",
+  "version": "1.0.0",
+  "description": "Website elaborado como Proyecto Final del curso de Diseño de Páginas WEB, llevado en el 8vo ciclo de la Universidad Científica del Sur.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server public"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcrisho/website-dpg.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pcrisho/website-dpg/issues"
+  },
+  "homepage": "https://github.com/pcrisho/website-dpg#readme"
+}

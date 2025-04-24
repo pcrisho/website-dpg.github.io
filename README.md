@@ -26,7 +26,7 @@ Explora todos mis proyectos en [mis repositorios](https://github.com/pcrisho?tab
 - HTML, CSS
 
 ### Backend
-- JavaScript
+- JavaScript, NodeJs
 
 ### Herramientas
 - Git, GitHub, Figma, Visual Studio Code
@@ -35,6 +35,7 @@ Explora todos mis proyectos en [mis repositorios](https://github.com/pcrisho?tab
 - Kanban
 
 ---
+
 
 ¡El proyecto aún está en desarrollo y se planean añadirle más funcionalidades y aplicando nuevas tecnologías!
 

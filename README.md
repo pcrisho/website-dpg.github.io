@@ -14,7 +14,7 @@ Explora todos mis proyectos en [mis repositorios](https://github.com/pcrisho?tab
 - ✉️ Crisóstomo Berrocal, Roberto Paolo [Repositorios](https://github.com/pcrisho?tab=repositories).
 - 💼 linkedin.com/in/paolo-crisostomo/
 
-- ✉️ Cabro Oliva, Alvaro Enrique [Repositorios](https://github.com/pcrisho?tab=repositories).
+- ✉️ Carpio Oliva, Alvaro Enrique [Repositorios](https://github.com/pcrisho?tab=repositories).
 - 💼 linkedin.com/in/paolo-crisostomo/
 
 - ✉️ Torres Medrano, Cesar Alexander [Repositorios](https://github.com/pcrisho?tab=repositories).

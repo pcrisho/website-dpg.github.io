@@ -1,21 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../src/css/styles.css">
+
+    <!--HTML Meta Tags-->
+    <title>Conectando - Sitio web orientado a estudiantes</title>
+    <meta name="description"
+        content="Impulsa tu crecimiento académico con recursos hechos para ti. Conectando! es la primera página orientada al crecimiento de los estudiantes universitarios del Perú." />
+
+    <!--Facebook Meta Tags-->
+    <meta property="og:url" content="//en_proceso" />
+    <meta property="og:type" content="website" />
+    <meta property="og:tittle"
+        content="Impulsa tu crecimiento académico con recursos hechos para ti. Conectando! es la primera página orientada al crecimiento de los estudiantes universitarios del Perú." />
+    <meta property="og:description"
+        content="Impulsa tu crecimiento académico con recursos hechos para ti. Conectando! es la primera página orientada al crecimiento de los estudiantes universitarios del Perú." />
+    <meta property="og:image" content="//en_proceso" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!--Twitter Meta Tags-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Conectando" />
+    <meta name="twitter:creator" content="@paolocriss" />
+    <meta name="twitter:tittle"
+        content="Impulsa tu crecimiento académico con recursos hechos para ti. Conectando! es la primera página orientada al crecimiento de los estudiantes universitarios del Perú." />
+    <meta name="twitter:description"
+        content="Impulsa tu crecimiento académico con recursos hechos para ti. Conectando! es la primera página orientada al crecimiento de los estudiantes universitarios del Perú." />
+    <meta name="twitter:image" content="//en_proceso" />
+
+    <link rel="icon" href="../public/assets/icons/book.svg">
+    <link rel="stylesheet" href="../src/css/styles-menu.css">
+
 </head>
 
 <body>
-    <h1>
-        Index
-    </h1>
 
-    <a href="/public/about/about-us.html">Acerca de nosotros</a> <br>
-    <a href="/public/contact/contact.html">Contacto</a> <br>
-    <a href="/public/services/">Aún en desarrollo</a> <br>
+    <header>
+        <nav class="menu">
+            <section class="menu__container">
+
+
+                <img src="../public/assets/icons/logo.svg" alt="Logotipo de Conectando">
+
+                <ul class="menu__links">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Conócenos</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Calculadora de notas</a>
+                    </li>
+
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Foro</a>
+                    </li>
+
+                    <li class="menu__item menu__item--show">
+                        <a href="#" class="menu__link">Recursos<img src="../public/assets/icons/arrow.svg"
+                                class="menu__arrow"></a>
+
+                        <ul class="menu__nesting">
+                            <li class="menu__inside">
+                                <a href="#" class="menu__link menu__link--inside">About 1</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="#" class="menu__link menu__link--inside">About 2</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="#" class="menu__link menu__link--inside">About 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="menu__botones">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link__registrate">Regístrate</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link__inicia-sesion">Regístrate</a>
+                    </li>
+                </ul>
+
+
+
+                <div class="menu__hamburguer">
+                    <img src="../public/assets/icons/menu.svg" class="menu__img">
+                </div>
+            </section>
+
+
+        </nav>
+    </header>
+    <script src="../src/js/app.js"></script>
 </body>
 
 </html>

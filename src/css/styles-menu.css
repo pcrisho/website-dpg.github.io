@@ -12,13 +12,18 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.menu {
+header {
     background-color: aliceblue;
     color: #fff;
     height: 70px;
+    backdrop-filter: blur(10px);
+    /* Aplica el desenfoque */
+    -webkit-backdrop-filter: blur(10px);
+    /* Compatibilidad con WebKit */
+
 }
 
-.menu__container {
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,26 +34,34 @@ body {
 }
 
 .menu__logo {
-    height: 60%;
+    height: 80%;
     transition: transform .5s;
     display: flex;
     padding: 0 auto;
 }
 
+.menu__navbar {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+    margin: 0 auto;
+}
+
 .menu__botones {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 16px;
 }
 
 .menu__links {
     height: 100%;
     transition: transform .5s;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-
 
 .menu__item {
     list-style: none;
@@ -143,72 +156,4 @@ body {
 .menu__img {
     display: block;
     width: 36px;
-}
-
-@media (max-width:1050px) {
-    .menu__hamburguer {
-        display: flex;
-    }
-
-    .menu__item {
-        --clip: 0;
-        overflow: hidden;
-    }
-
-    .menu__item--active {
-        --transform: rotate(0);
-        --background: #5e7094;
-    }
-
-    .menu__item--show {
-        background-color: var(--background);
-    }
-
-
-    .menu__links {
-        position: fixed;
-        max-width: 400px;
-        width: 100%;
-        top: 70px;
-        bottom: 0;
-        right: 0;
-        background-color: #0F62FE;
-        overflow-y: auto;
-        display: grid;
-        grid-auto-rows: max-content;
-        transform: translateX(100%);
-    }
-
-
-    .menu__links--show {
-        transform: unset;
-        width: 100%;
-    }
-
-
-    .menu__link {
-        padding: 25px 0;
-        padding-left: 30px;
-        height: auto;
-    }
-
-    .menu__arrow {
-        margin-left: auto;
-        margin-right: 20px;
-    }
-
-    .menu__nesting {
-        display: grid;
-        position: unset;
-        width: 100%;
-        transform: translateY(0);
-        height: 0;
-        transition: height .3s;
-    }
-
-    .menu__link--inside {
-        width: 90%;
-        margin-left: auto;
-        border-left: 1px solid #798499;
-    }
 }

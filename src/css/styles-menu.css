@@ -138,6 +138,7 @@ body {
     .nav__item {
         width: auto;
         height: auto;
+        
     }
 
     .nav__list{
@@ -145,6 +146,7 @@ body {
         grid-auto-flow: column;
         place-content: unset;
         padding: 0;
+
 
         transition: unset;
     }
@@ -154,11 +156,26 @@ body {
         grid-auto-flow: column;
         place-content: unset;
         padding: 0;
+        /*El gap original es de 2rem*/
+        gap: 1rem;
 
         transition: unset;
     }
 
     .nav__item__btn-is {
-       
+        width: auto;
+        height: auto;
+        border: 2px solid #0F62FE;
+        padding: 10px 16px;
     }
+    
+    .nav__item__btn-r {
+        background-color: #0F62FE;
+        width: auto;
+        height: auto;
+        border: 2px solid #0F62FE;
+        padding: 10px 16px;
+    }
+
+
 }

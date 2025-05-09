@@ -10,11 +10,12 @@ body {
 }
 
 .nav{
-    background-color:aliceblue;
+    background-color:white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.150);
 }
 
 .nav__container{
-    width: min(90%, 1200px);
+    width: min(90%, 1440px);
     margin: 0 auto;
 
     display: flex;
@@ -23,12 +24,13 @@ body {
 
     height: 80px;
 
-    --icon-toggle-menu: url("../../public/assets/icons/arrow.svg");
+    --icon-toggle-menu: url("../../public/assets/icons/menu.svg");
     --transform-menu-show: translate(-100%);
+
 }
 
 .nav__container:has(.nav__input:checked){
-    --icon-toggle-menu: url("../../public/assets/icons/menu.svg");
+    --icon-toggle-menu: url("../../public/assets/icons/arrow.svg");
     --transform-menu-show: translate(0);
 }
 
@@ -48,7 +50,7 @@ body {
     background-size: cover;
     cursor: pointer;
 
-    transition: background-image .5s;
+    transition: background-image .2s;
 }
 
 .nav__input{
@@ -67,7 +69,7 @@ body {
     text-align: center;
 
     padding: 1.5rem 5%;
-    background-color:whitesmoke;
+    background-color:aliceblue;
     list-style:none;
 
 
@@ -84,6 +86,7 @@ body {
     height: auto;
     border: 2px solid #0F62FE;
     padding: 10px 10px;
+    text-decoration: none;
 }
 
 .nav__item__btn-r {
@@ -92,6 +95,7 @@ body {
     height: auto;
     border: 2px solid #0F62FE;
     padding: 10px 10px;
+    text-decoration: none;
 }
 
 .nav__list__cta{
@@ -102,7 +106,7 @@ body {
     gap: 2rem;
     text-align: center;
 
-    padding: 1rem 5%;
+    padding: 0rem 5%;
     list-style:none;
 
 
@@ -118,15 +122,13 @@ body {
 
 .nav__link__btn-is{
     color: rgb(0, 89, 255);
-    text-decoration: none;
 }
 
 .nav__link__btn-r{
-    color: rgb(255, 255, 255);
-    text-decoration: none;    
+    color: rgb(255, 255, 255);  
 }
 
-@media (width > 980px){
+@media (width > 1040px){
     .nav__container{
         --transform-menu-show: translate(0);
     }
@@ -135,20 +137,29 @@ body {
         display: none;
     }
 
-    .nav__item {
-        width: auto;
-        height: auto;
-        
-    }
-
     .nav__list{
         position: static;
         grid-auto-flow: column;
         place-content: unset;
         padding: 0;
+        background-color: aliceblue;
 
 
         transition: unset;
+    }
+
+    .nav__item {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+    }
+
+    .nav__link{
+        width: 100%;
     }
 
     .nav__list__cta{

@@ -1,214 +1,195 @@
-* {
+*,
+::after,
+::before {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "roboto", sans-serif;
 }
 
-.menu {
-    background-color: aliceblue;
-    color: #fff;
-    height: 70px;
+.nav{
+    background-color:white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.150);
+
+    
 }
 
-.menu__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    height: 100%;
+.nav__container{
+    width: min(90%, 1440px);
     margin: 0 auto;
-}
 
-.menu__logo {
-    height: 60%;
-    transition: transform .5s;
     display: flex;
-    padding: 0 auto;
-}
-
-.menu__botones {
-    display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-}
 
-.menu__links {
-    height: 100%;
-    transition: transform .5s;
-    display: flex;
-}
+    height: 80px;
 
-
-
-.menu__item {
-    list-style: none;
-    position: relative;
-    height: 100%;
-    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
-    --transform: rotate(-90deg);
-}
-
-.menu__item:hover {
-    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    --transform: rotate(0);
-}
-
-.menu__link {
-    color: #21272A;
-    text-decoration: none;
-    padding: 0 30px;
-    display: flex;
-    height: 100%;
-    align-items: center;
-}
-
-.menu__link__registrate {
-    color: #0F62FE;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    padding: 10px 16px;
-    /* Solo padding horizontal */
-    border: 2px solid #0F62FE;
-    box-sizing: border-box;
+    --icon-toggle-menu: url("../../public/assets/icons/menu.svg");
+    --transform-menu-show: translate(-100%);
 
 }
 
-.menu__link__inicia-sesion {
-    color: #21272A;
-    text-decoration: none;
-    display: flex;
-    height: 100%;
-    align-items: center;
-
-    padding: 12px 16px;
-    color: #ffffff;
-    background-color: #0F62FE;
-
+.nav__container:has(.nav__input:checked){
+    --icon-toggle-menu: url("../../public/assets/icons/arrow.svg");
+    --transform-menu-show: translate(0);
 }
 
-.menu__link:hover {
-    background-color: #5e7094;
+.nav__figure, .nav__toggle{
+    z-index: 10;
 }
 
-
-.menu__arrow {
-    transform: var(--transform);
-    transition: transform .3s;
-    display: block;
-    margin-left: 3px;
-}
-
-.menu__nesting {
-    list-style: none;
-    transition: clip-path .3s;
-    clip-path: var(--clip);
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: max-content;
-    transform: translateY(100%);
-    background-color: #000;
-}
-
-.menu__link--inside {
-    padding: 30px 100px 30px 20px;
-}
-
-.menu__link--inside:hover {
-    background-color: #798499;
-}
-
-.menu__hamburguer {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-    cursor: pointer;
+.nav__input{
     display: none;
 }
 
-.menu__img {
-    display: block;
-    width: 36px;
+.nav__toggle{
+    
+    width: 30px;
+    height: 30px;
+    background-image: var(--icon-toggle-menu);
+    background-size: cover;
+    cursor: pointer;
+
+    transition: background-image .2s;
 }
 
-@media (max-width:1050px) {
-    .menu__hamburguer {
-        display: flex;
+.nav__input{
+    width: 40px;
+    height: 40px;
+}
+
+.nav__list{
+    transform: var(--transform-menu-show);
+    position: fixed;
+    inset: 0;
+
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    text-align: center;
+
+    padding: 1.5rem 5%;
+    background-color:aliceblue;
+    list-style:none;
+
+
+    transition: .5s transform;
+}
+
+.nav__item {
+    width: 160px;
+    height: auto;
+}
+
+.nav__item__btn-is {
+    width: 160px;
+    height: auto;
+    border: 2px solid #0F62FE;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.nav__item__btn-r {
+    background-color: #0F62FE;
+    width: 160px;
+    height: auto;
+    border: 2px solid #0F62FE;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.nav__list__cta{
+    inset: 0;
+
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    text-align: center;
+
+    padding: 0rem 5%;
+    list-style:none;
+
+
+    transition: .5s transform;
+}
+
+
+
+.nav__link{
+    color: black;
+    text-decoration: none;
+}
+
+.nav__link__btn-is{
+    color: rgb(0, 89, 255);
+}
+
+.nav__link__btn-r{
+    color: rgb(255, 255, 255);  
+}
+
+@media (width > 1040px){
+    .nav__container{
+        --transform-menu-show: translate(0);
     }
 
-    .menu__item {
-        --clip: 0;
-        overflow: hidden;
+    .nav__toggle{
+        display: none;
     }
 
-    .menu__item--active {
-        --transform: rotate(0);
-        --background: #5e7094;
+    .nav__list{
+        position: static;
+        grid-auto-flow: column;
+        place-content: unset;
+        padding: 0;
+        background-color: white;
+        gap: 3rem;
+
+
+        transition: unset;
     }
 
-    .menu__item--show {
-        background-color: var(--background);
-    }
-
-
-    .menu__links {
-        position: fixed;
-        max-width: 400px;
-        width: 100%;
-        top: 70px;
-        bottom: 0;
-        right: 0;
-        background-color: #0F62FE;
-        overflow-y: auto;
-        display: grid;
-        grid-auto-rows: max-content;
-        transform: translateX(100%);
-    }
-
-
-    .menu__links--show {
-        transform: unset;
-        width: 100%;
-    }
-
-
-    .menu__link {
-        padding: 25px 0;
-        padding-left: 30px;
+    .nav__item {
+        width: auto;
         height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
     }
 
-    .menu__arrow {
-        margin-left: auto;
-        margin-right: 20px;
-    }
-
-    .menu__nesting {
-        display: grid;
-        position: unset;
+    .nav__link{
         width: 100%;
-        transform: translateY(0);
-        height: 0;
-        transition: height .3s;
     }
 
-    .menu__link--inside {
-        width: 90%;
-        margin-left: auto;
-        border-left: 1px solid #798499;
+    .nav__list__cta{
+        position: static;
+        grid-auto-flow: column;
+        place-content: unset;
+        padding: 0;
+        /*El gap original es de 2rem*/
+        gap: 1rem;
+
+        transition: unset;
     }
+
+    .nav__item__btn-is {
+        width: auto;
+        height: auto;
+        border: 2px solid #0F62FE;
+        padding: 10px 16px;
+    }
+    
+    .nav__item__btn-r {
+        background-color: #0F62FE;
+        width: auto;
+        height: auto;
+        border: 2px solid #0F62FE;
+        padding: 10px 16px;
+    }
+
+
 }

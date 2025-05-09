@@ -38,67 +38,57 @@
 
 <body>
 
-    <header>
-        <nav class="menu">
-            <section class="menu__container">
+    <nav class="nav">
 
+        <div class="nav__container">
 
-                <a href="../public/index.html" class="menu__logo">
-                    <img src="../public/assets/icons/logo.svg" alt="Logotipo de Conectando">
-                </a>
+            <figure class="nav__figure">
+                <img src="./assets/icons/logo.svg" class="nav__logo">
+            </figure>
 
+            <label class="nav__toggle">
+                <input type="checkbox" id="menu-input" class="nav__input">
+            </label>
 
-                <ul class="menu__links">
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Conócenos</a>
-                    </li>
+            <ul class="nav__list">
 
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Calculadora de notas</a>
-                    </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Conócenos</a>
+                </li>
 
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Foro</a>
-                    </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Calculadora de notas</a>
+                </li>
 
-                    <li class="menu__item menu__item--show">
-                        <a href="#" class="menu__link">Recursos<img src="../public/assets/icons/arrow.svg"
-                                class="menu__arrow"></a>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Foro</a>
+                </li>
 
-                        <ul class="menu__nesting">
-                            <li class="menu__inside">
-                                <a href="#" class="menu__link menu__link--inside">About 1</a>
-                            </li>
-                            <li class="menu__inside">
-                                <a href="#" class="menu__link menu__link--inside">About 2</a>
-                            </li>
-                            <li class="menu__inside">
-                                <a href="#" class="menu__link menu__link--inside">About 3</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Recursos</a>
+                </li>
 
-                <ul class="menu__botones">
-                    <li class="menu__item">
-                        <a href="#" class="menu__link__registrate">Regístrate</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link__inicia-sesion">Regístrate</a>
-                    </li>
-                </ul>
+                <li class="nav__list__cta">
+                    <ul class="nav__list__cta">
 
+                        <a href="" class="nav__item__btn-is">
+                            <li class="nav__link__btn-is">Iniciar sesión</li>
+                        </a>
 
+                        <a href="" class="nav__item__btn-r">
+                            <li class="nav__link__btn-r">Regístrate</li>
+                        </a>               
+                    </ul>
+                </li>
 
-                <div class="menu__hamburguer">
-                    <img src="../public/assets/icons/menu.svg" class="menu__img">
-                </div>
-            </section>
+                
+                
 
+            </ul>
 
-        </nav>
-    </header>
-    <script src="../src/js/app.js"></script>
+        </div>
+
+    </nav>
 </body>
 
 </html>

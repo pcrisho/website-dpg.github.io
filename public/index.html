@@ -38,55 +38,53 @@
 
 <body>
 
-    <header>
+    <nav class="nav">
 
-        <section class="menu">
+        <div class="nav__container">
 
-            <div class="menu__logo">
-                <a href="../public/index.html" class="menu__logo">
-                    <img src="../public/assets/icons/logo.svg" alt="Logotipo de Conectando">
-                </a>
-            </div>
+            <figure class="nav__figure">
+                <img src="./assets/icons/logo.svg" class="nav__logo">
+            </figure>
 
-            <nav class="menu__navbar">
-                <ul class="menu__links">
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Conócenos</a>
+            <label class="nav__toggle">
+                <input type="checkbox" id="menu-input" class="nav__input">
+            </label>
+
+            <ul class="nav__list">
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Conócenos</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Calculadora de notas</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Foro</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Recursos</a>
+                </li>
+
+                <ul class="nav__list__cta">
+
+                    <li class="nav__item__btn-is">
+                        <a href="#" class="nav__link__btn-is">Iniciar sesión</a>
                     </li>
-
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Calculadora de notas</a>
-                    </li>
-
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Foro</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Recursos</a>
-                    </li>
-
+    
+                    <li class="nav__item__btn-r">
+                        <a href="#" class="nav__link__btn-r">Regístrate</a>
+                    </li>                   
                 </ul>
+                
 
-            </nav>
+            </ul>
 
-            <div class="menu__botones">
-                <ul class="menu__botones">
-                    <li class="menu__item">
-                        <a href="#" class="menu__link__registrate">Regístrate</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link__inicia-sesion">Regístrate</a>
-                    </li>
-                </ul>
+        </div>
 
-            </div>
-
-        </section>
-
-
-
-    </header>
-    <script src="../src/js/app.js"></script>
+    </nav>
 </body>
 
 </html>

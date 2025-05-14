@@ -31,16 +31,25 @@
         content="Impulsa tu crecimiento académico con recursos hechos para ti. Conectando! es la primera página orientada al crecimiento de los estudiantes universitarios del Perú." />
     <meta name="twitter:image" content="//en_proceso" />
 
-    <link rel="icon" href="../public/assets/icons/book.svg">
-    <link rel="stylesheet" href="../src/css/styles-menu.css">
+    <!-- Llamado a la fuente y sus pesos: 100, 300, 400, 500, 700, 900 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Ícono de la página -->
+    <link rel="icon" href="./../public/assets/icons/book.svg">
+
+    <!-- Hojas de estilos de la página -->
+    <link rel="stylesheet" href="../src/css/layout/header.css">
+    <link rel="stylesheet" href="../src/css/layout/styles.css">
 
 </head>
 
 <body>
 
-    <nav class="nav">
+    <!-- Header de la página -->
+    <header>
 
-        <div class="nav__container">
+        <nav class="nav__container">
 
             <figure class="nav__figure">
                 <img src="./assets/icons/logo.svg" class="nav__logo">
@@ -53,11 +62,11 @@
             <ul class="nav__list">
 
                 <li class="nav__item">
-                    <a href="#" class="nav__link">Conócenos</a>
+                    <a href="./pages/about/about-us.html" class="nav__link">Conócenos</a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="#" class="nav__link">Calculadora de notas</a>
+                    <a href="./pages/grade-calculator/" class="nav__link">Calculadora de notas</a>
                 </li>
 
                 <li class="nav__item">
@@ -65,30 +74,535 @@
                 </li>
 
                 <li class="nav__item">
-                    <a href="#" class="nav__link">Recursos</a>
+                    <a href="./pages/resources/resources.html" class="nav__link">Recursos</a>
                 </li>
 
                 <li class="nav__list__cta">
+
                     <ul class="nav__list__cta">
+
+                        <a href="" class="nav__item__btn-r">
+                            <li class="nav__link__btn-r">Regístrate</li>
+                        </a>
 
                         <a href="" class="nav__item__btn-is">
                             <li class="nav__link__btn-is">Iniciar sesión</li>
                         </a>
 
-                        <a href="" class="nav__item__btn-r">
-                            <li class="nav__link__btn-r">Regístrate</li>
-                        </a>
+
+
                     </ul>
+
                 </li>
-
-
-
 
             </ul>
 
-        </div>
+        </nav>
 
-    </nav>
+    </header>
+
+    <!-- Estructura de la página -->
+    <main>
+
+        <!-- Bienvenida - Hero -->
+        <section>
+            <div id="hero">
+                <h1>Conectamos tu vida universitaria con herramientas que marcan la diferencia</h1>
+
+                <P>
+                    Impulsa tu crecimiento académico con recursos hechos para ti. Conectando! es la primera página
+                    orientada al crecimiento de los estudiantes universitarios del Perú.
+                </P>
+
+                <div class="container__btn">
+                    <a href="" class="hero__btn-ra">Regístrate ahora</a>
+                    <a href="" class="hero__btn-rr">Revisar recursos</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ¿Por qué usar esta plataforma? -->
+        <section id="herramientas">
+
+            <div class="container">
+                <div class="heading__2">
+                    <p class="p">Las herramientas que tú necesitas</p>
+                    <h2>¿Por qué usar esta plataforma?</h2>
+                </div>
+
+                <div class="container__grid">
+                    <!-- Grilla de 4 items -->
+
+                    <div class="container__grid__item">
+                        <figure class="">
+                            <img src="./assets/icons/tool.svg" class="">
+                        </figure>
+                        <p>Herramientas para organizar tu semestre</p>
+                    </div>
+                    <div class="container__grid__item">
+                        <figure class="">
+                            <img src="./assets/icons/calculate.svg" class="">
+                        </figure>
+                        <p>Calculadora de promedios fácil de usar</p>
+                    </div>
+                    <div class="container__grid__item">
+                        <figure class="">
+                            <img src="./assets/icons/collection-books.svg" class="">
+                        </figure>
+                        <p>Accede a recursos educativos gratuitos y confiables</p>
+                    </div>
+                    <div class="container__grid__item">
+                        <figure class="">
+                            <img src="./assets/icons/group.svg" class="">
+                        </figure>
+                        <p>Comunidad de estudiantes activa y en constante crecimiento</p>
+
+                    </div>
+
+
+                </div>
+
+                <div class="container__btn">
+                    <a href="" class="hero__btn-ra">
+                        ¡Quiero acceder!
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Aprende y certifícate con recursos seleccionados para ti -->
+        <section id="recursos-seleccionados">
+
+            <div class="container">
+                <div class="heading__2">
+                    <p class="p">ESTÁS EN BUENAS MANOS</p>
+                    <h2>Aprende y certifícate con recursos seleccionados para ti</h2>
+                    <p class="heading__2__p">Te guiamos en tu desarrollo académico y profesional con rutas de
+                        aprendizaje pensadas para
+                        estudiantes universitarios del Perú. Dentro de las instituciones que proporcionan estos recursos
+                        podrás encontrar</p>
+                </div>
+
+                <div class="container__grid">
+
+                    <div class="container__grid__item">
+                        <figure class="">
+                            <img src="./assets/icons/telefonica-logo.svg" class="logo">
+                        </figure>
+                    </div>
+                    <div class="container__grid__item">
+                        <figure class="">
+                            <img src="./assets/icons/aprendemas-logo.svg" class="logo">
+                        </figure>
+                    </div>
+                    <div class="container__grid__item">
+                        <figure class="">
+                            <img src="./assets/icons/soa-logo.svg" class="logo">
+                        </figure>
+                    </div>
+                    <div class="container__grid__item">
+                        <figure class="">
+                            <img src="./assets/icons/google-logo.svg" class="logo">
+                        </figure>
+                    </div>
+                    <div class="container__grid__item">
+                        <figure class="">
+                            <img src="./assets/icons/capacitat-logo.svg" class="nav__logo">
+                        </figure>
+                    </div>
+                    <div class="container__grid__item">
+                        <figure class="">
+                            <img src="./assets/icons/cisco-logo.svg" class="nav__logo">
+                        </figure>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Lo que dicen nuestros usuarios acerca de Conectando! -->
+        <section id="testimonios">
+
+            <div class="container">
+                <div class="heading__2">
+                    <p class="p">TESTIMONIOS</p>
+                    <h2>Lo que dicen nuestros usuarios acerca de Conectando!</h2>
+                </div>
+
+
+
+                <div class="container__grid">
+                    <div class="container__grid__item">
+                        <p>“Me encantó que todo esté en un solo lugar. ¡Fácil de usar y súper útil!”</p>
+
+                        <div>
+                            <figure class="">
+                                <img src="./assets/icons/book.svg" class="nav__logo">
+                            </figure>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="container__grid__item">
+                        <p>“Los recursos gratuitos y los links a cursos online me han ayudado mucho en mis prácticas.”
+                        </p>
+
+                        <div>
+                            <figure class="">
+                                <img src="./assets/icons/book.svg" class="nav__logo">
+                            </figure>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="container__grid__item">
+                        <p>“Los recursos gratuitos y los links a cursos online me han ayudado mucho en mis prácticas.”
+                        </p>
+
+                        <div>
+                            <figure class="">
+                                <img src="./assets/icons/book.svg" class="nav__logo">
+                            </figure>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="container__grid__item">
+                        <p>“Los recursos gratuitos y los links a cursos online me han ayudado mucho en mis prácticas.”
+                        </p>
+
+                        <div>
+                            <figure class="">
+                                <img src="./assets/icons/book.svg" class="nav__logo">
+                            </figure>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="container__grid__item">
+                        <p>“Los recursos gratuitos y los links a cursos online me han ayudado mucho en mis prácticas.”
+                        </p>
+
+                        <div>
+                            <figure class="">
+                                <img src="./assets/icons/book.svg" class="nav__logo">
+                            </figure>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+
+        </section>
+
+        <!-- Lo que dicen nuestros usuarios acerca de Conectando! -->
+        <section id="resumen-articulos">
+
+            <div class="container">
+
+                <div class="heading__2">
+                    <p class="p">Explora ideas, aprende de experiencias y amplía tu visión</p>
+                    <h2>Una colección de artículos escritos por estudiantes, docentes y profesionales para inspirarte y
+                        mantenerte informado</h2>
+                </div>
+
+                <div class="container__grid">
+
+                    <div class="container__grid__card">
+                        <img src="./assets/images/hero-banner.jpg" alt="" class="card__img">
+                        <div class="card__objects">
+                            <p class="tittle">Desarrollo Personal</p>
+                            <h3>
+                                ¿Por qué es importante aprender a organizar tu tiempo en la universidad?
+                            </h3>
+
+                            <p class="description">
+                                Este artículo ofrece consejos prácticos sobre cómo gestionar el...
+                            </p>
+
+                            <div class="card__author">
+                                <img src="./assets/icons/account.svg" alt="">
+                                <div class="card__author__nr">
+                                    <p class="name-author">Andrea Tello</p>
+                                    <p class="role">Alumna de Psicología</p>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="container__grid__card">
+                        <img src="./assets/images/hero-banner.jpg" alt="" class="card__img">
+                        <div class="card__objects">
+                            <p class="tittle">Tecnología</p>
+                            <h3>
+                                Cómo la inteligencia artificial está cambiando la forma de estudiar
+                            </h3>
+
+                            <p class="description">
+                                Un análisis sobre cómo herramientas como ChatGPT, Notion AI y platafor... </p>
+
+                            <div class="card__author">
+                                <img src="./assets/icons/account.svg" alt="">
+                                <div class="card__author__nr">
+                                    <p class="name-author">Daniel Gutiérrez</p>
+                                    <p class="role">Ingeniero de Sistemas</p>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="container__grid__card">
+                        <img src="./assets/images/hero-banner.jpg" alt="" class="card__img">
+                        <div class="card__objects">
+                            <p class="tittle">Redacción</p>
+                            <h3>
+                                Normas APA: los 5 errores más comunes y cómo evitarlos
+                            </h3>
+
+                            <p class="description">
+                                Guía útil para estudiantes que están iniciando en el mundo de la invest...
+                            </p>
+
+                            <div class="card__author">
+                                <img src="./assets/icons/account.svg" alt="">
+                                <div class="card__author__nr">
+                                    <p class="name-author">Mg. Karina Silva</p>
+                                    <p class="role">Docente en UPC</p>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="container__grid__card">
+                        <img src="./assets/images/hero-banner.jpg" alt="" class="card__img">
+                        <div class="card__objects">
+                            <p class="tittle">Entorno Laboral</p>
+                            <h3>
+                                Certificaciones gratuitas que te harán destacar en tu CV sobre los demás
+                            </h3>
+
+                            <p class="description">
+                                Una lista actualizada de certificaciones con valor curricular...
+                            </p>
+
+                            <div class="card__author">
+                                <img src="./assets/icons/account.svg" alt="">
+                                <div class="card__author__nr">
+                                    <p class="name-author">Julio Reyes</p>
+                                    <p class="role">Atracción de Talento</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container__btn">
+                    <a href="" class="hero__btn-ra">
+                        Ver más artículos
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Conoce al equipo detrás de Conectando! -->
+        <section id="equipo">
+
+            <div class="container">
+
+                <div class="heading__2">
+
+                    <p class="p">el equipo</p>
+                    <h2>Conoce al equipo detrás de Conectando!</h2>
+
+                </div>
+
+                <div class="container__grid">
+                    <div class="container__grid__card">
+
+                        <img src="./assets/images/paolo-crisostomo.jpg" alt="" class="card__img">
+                        <div class="card__objects">
+                            <h3>Paolo Crisóstomo</h3>
+                            <p class="role">Desarrollador Fullstack & Co-founder</p>
+                            <p class="description">"Crear valor para otros estudiantes es nuestra mayor motivación."</p>
+                        </div>
+
+                        <div class="grid__card__social-media">
+                            <a href="">
+                                <img src="./assets/icons/linkedin-logo.svg" alt="">
+                            </a>
+
+                            <a href="">
+                                <img src="./assets/icons/github-logo.svg" alt="">
+                            </a>
+
+                        </div>
+
+                        <div class="container__btn">
+                            <a href="" class="container__btn-rr">
+                                Contactar
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="container__grid__card">
+
+                        <img src="./assets/images/paolo-crisostomo.jpg" alt="" class="card__img">
+                        <div class="card__objects">
+                            <h3>Álvaro Carpio</h3>
+                            <p class="role">Desarrollador Fullstack & Co-founder</p>
+                            <p class="description">"Un diseño intuitivo hace la diferencia entre una herramienta y una
+                                solución."</p>
+                        </div>
+
+                        <div class="grid__card__social-media">
+                            <a href="">
+                                <img src="./assets/icons/linkedin-logo.svg" alt="">
+                            </a>
+
+                            <a href="">
+                                <img src="./assets/icons/github-logo.svg" alt="">
+                            </a>
+
+                        </div>
+
+                        <div class="container__btn">
+                            <a href="" class="container__btn-rr">
+                                Contactar
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="container__grid__card">
+
+                        <img src="./assets/images/paolo-crisostomo.jpg" alt="" class="card__img">
+                        <div class="card__objects">
+                            <h3>César Torres</h3>
+                            <p class="role">Desarrollador Fullstack & Co-founder</p>
+                            <p class="description">"Un código claro es tan importante como un diseño atractivo."</p>
+                        </div>
+
+                        <div class="grid__card__social-media">
+                            <a href="">
+                                <img src="./assets/icons/linkedin-logo.svg" alt="">
+                            </a>
+
+                            <a href="">
+                                <img src="./assets/icons/github-logo.svg" alt="">
+                            </a>
+
+                        </div>
+
+                        <div class="container__btn">
+                            <a href="" class="container__btn-rr">
+                                Contactar
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="container__grid__card">
+
+                        <img src="./assets/images/paolo-crisostomo.jpg" alt="" class="card__img">
+                        <div class="card__objects">
+                            <h3>Fredy Nolasco</h3>
+                            <p class="role">Desarrollador Fullstack & Co-founder</p>
+                            <p class="description">"Transformamos las necesidades en nuevas oportunidades."</p>
+                        </div>
+
+                        <div class="grid__card__social-media">
+                            <a href="">
+                                <img src="./assets/icons/linkedin-logo.svg" alt="">
+                            </a>
+
+                            <a href="">
+                                <img src="./assets/icons/github-logo.svg" alt="">
+                            </a>
+
+                        </div>
+
+                        <div class="container__btn">
+                            <a href="" class="container__btn-rr">
+                                Contactar
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="preguntas-frecuentes">
+
+            <div class="container">
+                <div class="heading__2">
+                    <p class="p">preguntas frecuentes</p>
+                    <h2>Encuentra respuestas rápidas a tus dudas más comunes</h2>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="cta">
+
+            <div class="container">
+                <div class="heading__2">
+                    <h2>¿Estás listo para potenciar tu vida universitaria?</h2>
+                </div>
+
+                <div>
+                    <p>Nuestra misión es facilitar tu vida académica a través de una plataforma integral y accesible. En
+                        un entorno educativo donde el manejo del tiempo, el acceso a materiales de estudio y la
+                        organización personal se han vuelto desafíos constantes, es necesario contar con herramientas
+                        digitales que centralizan y simplifican estas tareas.
+                    </p>
+                </div>
+
+                <div class="container__btn">
+                    <a href="" class="hero__btn-ra">
+                        Empieza ahora
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
 </body>
 
 

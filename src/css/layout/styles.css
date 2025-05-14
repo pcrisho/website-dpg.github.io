@@ -1,0 +1,381 @@
+*,
+::after,
+::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #0F62FE;
+    /* Azul */
+    --color-text: #21272A;
+    /* Gris oscuro */
+    --color-text-h2: #001D6C;
+
+    /* 2do fondo */
+    --background-color-2: #F2F4F8
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--color-text);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.7rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Container general */
+
+.container {
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 80px;
+}
+
+/* Primer section */
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    gap: 48px;
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, 0.5),
+            rgb(0, 0, 0, 0.5)), url(../../../public/assets/images/hero-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    width: 80%;
+    color: white;
+}
+
+#hero p {
+    max-width: 800px;
+    color: white;
+
+}
+
+.hero__btn-ra {
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    padding: 16px 32px;
+    color: white;
+    background-color: var(--color-primary);
+}
+
+.hero__btn-rr {
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    border: 2px solid white;
+    padding: 16px 32px;
+    color: white;
+
+}
+
+.container__btn {
+    display: flex;
+    gap: 16px;
+}
+
+/* Segundo section */
+
+#herramientas .container {
+    width: 100%;
+    text-align: center;
+    gap: 64px
+}
+
+.heading__2 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0px 0px;
+}
+
+.heading__2 .p {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: var(--color-text-h2);
+    font-weight: 700;
+    padding: 0px 0px;
+}
+
+.container__grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.container__grid__item {
+    /* Para 4 columnas */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 25%;
+    font-size: 18px;
+
+}
+
+.container__grid__card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font-size: 18px;
+
+}
+
+.container__grid__card .card__img {
+    max-width: 100%;
+}
+
+.container__grid__card .card__objects {
+    margin: 24px 16px;
+    text-align: left;
+}
+
+.container__grid__card .card__objects .tittle {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.container__grid__card .card__objects h3 {
+    padding-top: 4px;
+    font-size: 1.2rem;
+}
+
+.container__grid__card .card__objects .description {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card__author {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.card__author img {
+    width: 48px;
+    height: 48px;
+}
+
+.card__author__nr {
+    margin: auto 0;
+}
+
+.card__author__nr .name-author {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card__author__nr .role {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #697077;
+}
+
+
+
+
+
+
+#herramientas .container__btn {
+    justify-content: center;
+}
+
+#herramientas .hero__btn-ra {
+    width: auto;
+}
+
+
+#recursos-seleccionados {
+    background-color: var(--background-color-2);
+
+}
+
+
+#recursos-seleccionados .container {
+    /* GAP especial */
+    width: 100%;
+    text-align: center;
+    gap: 64px;
+
+}
+
+#recursos-seleccionados .heading__2__p {
+    padding-top: 48px;
+}
+
+#recursos-seleccionados .container__grid {
+    padding-top: 0px;
+}
+
+#recursos-seleccionados .container__grid__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Para 8 columnas */
+
+    height: auto;
+    font-size: 18px;
+}
+
+#recursos-seleccionados figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#recursos-seleccionados .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+#testimonios .container {
+    width: 100%;
+    text-align: center;
+    gap: 64px
+}
+
+
+/*
+
+TESTIMONIOS IRÁ EN OTRA HORA CSS
+
+*/
+
+#resumen-articulos {
+    background-color: var(--background-color-2);
+}
+
+#resumen-articulos .container {
+    /* GAP especial */
+    width: 100%;
+    text-align: center;
+    gap: 64px;
+
+}
+
+#resumen-articulos .container__btn {
+    display: flex;
+    justify-content: center;
+}
+
+#equipo .container {
+    width: 100%;
+    text-align: center;
+    gap: 64px;
+}
+
+#equipo .container__grid .card__img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover
+}
+
+#equipo .container__grid__card .grid__card__social-media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+#equipo .container__grid__card .card__objects{
+    margin: 16px auto;
+    text-align: center;
+}
+#equipo .container__grid__card .card__objects h3{
+    font-size: 1.2rem;
+}
+
+#equipo .card__objects .role {
+     font-size: 1.1rem;
+    color: #697077;
+}
+
+#equipo .card__objects .description {
+    padding: 0;
+    color: #697077;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+#equipo .container__btn {
+    justify-content: center;
+}
+
+#equipo .container__btn .container__btn-rr {
+    text-decoration: none;
+
+    font-size: 1.2rem;
+    border: 2px solid var(--color-primary);
+    padding: 16px 32px;
+    color: var(--color-primary);
+
+
+}
+
+/* -------------------------------------------------- */
+
+#preguntas-frecuentes {
+    background-color: var(--background-color-2);
+}
+
+#preguntas-frecuentes .container {
+    width: 100%;
+    text-align: center;
+    gap: 64px;
+}
+
+/* -------------------------------------------------- */
+
+#cta .container {
+    width: 100%;
+    text-align: center;
+    gap: 64px;
+}
+
+#cta .container__btn {
+    justify-content: center;
+}

@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server public"
+    "start": "live-server --open=public/index.html"
 
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pcrisho/website-dpg.git"
+    "url": "https://github.com/pcrisho/website-dpg.git"
   },
   "keywords": [],
   "author": "Paolo Crisóstomo, Álvaro Carpio, César Torres",

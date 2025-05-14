@@ -62,10 +62,11 @@
 
 .carousel .carousel__card {
     scroll-snap-align: start;
-    height: 324px;
+    height: 200px;
     list-style: none;
-    background-color:aliceblue;
+    background-color:rgb(255, 255, 255);
     border-radius: 8px;
+    border: 1px solid #DDE1E6;
     display: flex;
     cursor: pointer;
     padding-bottom: 15px;
@@ -75,30 +76,22 @@
     
 }
 
-.carousel__card .carousel__card__img {
-    /*background: ;*/
-
-}
-
-.carousel__card h2 {
+.carousel__card h3 {
     font-weight: 500;
-    font-size: 1.56rem;
-    margin: 30px 0 5px;
+    font-size: 1.5rem;
+    margin: 16px 0 5px;
 }
 
 .carousel__card span {
-    color: blue;
+    color: var(--color-text);
+    font-size: 1.1rem;
 }
 
-.carousel__card .carousel__card__img img{
-width: 140px;
-height: 140px;
-object-fit: cover;
-border-radius: 50%;
-
+.carousel__card p {
+    margin: 0 4px;
 }
 
-@media screen  and (max-width: 900px){
+@media screen  and (max-width: 1040px){
     .wrapper .carousel {
         grid-auto-columns: calc((100% / 2) - 8px);
     }

@@ -36,6 +36,24 @@ Explora todos mis proyectos en [mis repositorios](https://github.com/pcrisho?tab
 
 ---
 
+## 💼 Documentación del proyecto
+
+### Código
+~~~
+# Download and install fnm:
+winget install Schniz.fnm
+
+# Download and install Node.js:
+fnm install 22
+
+# Verify the Node.js version:
+node -v # Should print "v22.15.0".
+
+# Verify npm version:
+npm -v # Should print "10.9.2".
+~~~
+
+
 
 ¡El proyecto aún está en desarrollo y se planean añadirle más funcionalidades y aplicando nuevas tecnologías!
 

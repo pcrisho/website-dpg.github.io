@@ -120,6 +120,7 @@ ul {
     flex-direction: column;
     gap: 8px;
     margin: 0px 0px;
+    text-align: center;
 }
 
 .heading__2 .p {
@@ -361,12 +362,15 @@ TESTIMONIOS IRÁ EN OTRA HORA CSS
 #preguntas-frecuentes {
     background-color: var(--background-color-2);
 }
-
+/*
 #preguntas-frecuentes .container {
-    width: 100%;
-    text-align: center;
-    gap: 64px;
+width: 100%;
+text-align: center;
+gap: 64px;
 }
+
+*/
+
 
 /* -------------------------------------------------- */
 

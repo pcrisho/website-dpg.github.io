@@ -16,6 +16,11 @@
     --background-color-2: #F2F4F8
 }
 
+html {
+    scroll-behavior: smooth;
+    /* Scroll suave */
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: var(--color-text);
@@ -61,6 +66,7 @@ ul {
     text-align: center;
     flex-direction: column;
     height: 90vh;
+    padding-top: 80px;
     gap: 48px;
     background-image: linear-gradient(0deg,
             rgb(0, 0, 0, 0.5),
@@ -159,6 +165,9 @@ ul {
 
 .container__grid__card .card__img {
     max-width: 100%;
+    height: 200px;
+    object-fit: cover
+    
 }
 
 .container__grid__card .card__objects {
@@ -307,9 +316,13 @@ TESTIMONIOS IRÁ EN OTRA HORA CSS
     gap: 64px;
 }
 
-#equipo .container__grid .card__img{
+
+#equipo .container__grid__card {
     width: 100%;
-    height: 250px;
+}
+
+#equipo .container__grid .card__img{
+    height: auto;
     object-fit: cover
 }
 
@@ -377,7 +390,7 @@ gap: 64px;
 #cta .container {
     width: 100%;
     text-align: center;
-    gap: 64px;
+    gap: 48px;
 }
 
 #cta .container__btn {

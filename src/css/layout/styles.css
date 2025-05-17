@@ -219,12 +219,27 @@ ul {
 }
 
 
-
-
-
-
 #herramientas .container__btn {
     justify-content: center;
+}
+
+#herramientas .container__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Para 6 columnas */
+    height: 100%;
+    padding-top: 0px;
+}
+
+#herramientas .container__grid__item {
+        display: unset;
+    flex-direction:unset;
+    gap: 16px;
+    
+    display: unset;
+    align-items: unset;
+    justify-content: unset;
+    margin: auto;
+    width: 100%;
 }
 
 #herramientas .hero__btn-ra {
@@ -251,31 +266,37 @@ ul {
 }
 
 #recursos-seleccionados .container__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Para 6 columnas */
+    height: 100%;
     padding-top: 0px;
 }
 
 #recursos-seleccionados .container__grid__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    display: unset;
+    flex-direction:unset;
+    gap: 16px;
+    
+    display: unset;
+    align-items: unset;
+    justify-content: unset;
+    margin: auto;
+    width: 100%;
 
-    /* Para 8 columnas */
+    /* Para 6 columnas */
 
-    height: auto;
+
     font-size: 18px;
 }
 
 #recursos-seleccionados figure {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
+    margin: auto;
 }
 
 #recursos-seleccionados .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
     height: 100%;
 
 }
@@ -305,6 +326,16 @@ TESTIMONIOS IRÁ EN OTRA HORA CSS
 
 }
 
+#resumen-articulos .container__grid{
+        display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Para 6 columnas */
+    height: 100%;
+}
+
+#resumen-articulos .container__grid__card {
+    width: 100%;
+}
+
 #resumen-articulos .container__btn {
     display: flex;
     justify-content: center;
@@ -314,6 +345,12 @@ TESTIMONIOS IRÁ EN OTRA HORA CSS
     width: 100%;
     text-align: center;
     gap: 64px;
+}
+
+#equipo .container__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Para 6 columnas */
+    height: 100%;
 }
 
 

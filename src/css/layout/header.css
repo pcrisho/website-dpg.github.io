@@ -22,6 +22,7 @@ header {
     /* Para que el header se quede en la parte superior y ocupe todo el ancho */
     position: fixed;
     width: 100%;
+    
 
 
 }

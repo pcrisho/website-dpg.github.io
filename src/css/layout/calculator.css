@@ -1,10 +1,3 @@
-css
-
-Contraer
-
-Ajuste
-
-Copiar
 * {
     margin: 0;
     box-sizing: border-box;
@@ -94,25 +87,30 @@ body {
 main {
     background-color: #dde9f0;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Título */
 #titulo {
     width: 100%;
     text-align: center;
-    background-color: transparent;
+    background-color: #dde9f0; /* Asegurar que el fondo coincida con main */
     margin: 0;
-    padding: 2rem 0; /* Espaciado vertical */
-    border: none; /* Asegurarse de que no haya borde */
-    box-shadow: none; /* Eliminar cualquier sombra */
+    padding: 2rem 0; /* Espaciado vertical, sin padding lateral */
+    border: none;
+    box-shadow: none;
+    display: block; /* Asegurar que ocupe todo el ancho */
 }
 
+/* Título específico */
 h1 {
-    font-size: clamp(2rem, 5vw, 3rem); /* Tamaño ajustado para que sea más grande */
-    margin-top: 4rem; /* Eliminar márgenes para que el padding de #titulo controle el espaciado */
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 0;
     color: var(--color-text);
-    border: none; /* Asegurarse de que no haya borde */
-    width: 100%; /* Asegurar que el título ocupe todo el ancho */
+    border: none;
+    width: 100%; /* Asegurar que el texto ocupe todo el ancho del contenedor */
+    padding: 0 5%; /* Pequeño padding lateral para no pegar el texto a los bordes */
 }
 
 h2 {
@@ -123,7 +121,7 @@ h2 {
 
 #adiv {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     padding: 1rem;
     background-color: #dde9f0;

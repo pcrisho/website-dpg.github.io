@@ -1,25 +1,49 @@
 /* Footer */
 footer {
     background-color: grey;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    padding: 2rem 1rem;
 }
 
 #fdivpadre {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: grey;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto; /* centrado horizontal */
+    padding: 0 1rem;
 }
 
 #fdiv1, #fdiv2, #fdiv3 {
     width: 100%;
-    margin: 0;
+}
+
+#fdiv1 {
+    position: relative;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 #fdiv2 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+#fdiv1::after,
+#fdiv2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
 }
 
 #fdiv21, #fdiv22, #fdiv23, #fdiv24 {
@@ -46,41 +70,38 @@ footer {
     max-width: 150px;
     height: auto;
     filter: grayscale(100%) brightness(4.9);
-    margin: 0 auto 1rem;
-    display: block;
+    margin-bottom: 1rem;
 }
 
 #fdiv1 input {
     width: 100%;
-    max-width: 100%;
-    height: 2.5rem;
+    max-width: 520px;
     padding: 0.5rem;
-    margin: 0 0 0.5rem;
-    border: 1px solid #ccc;
+    margin-bottom: 0.5rem;
     border-radius: 4px;
+    border: none;
 }
 
 #fdiv1 a {
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
+    display: inline-block;
     padding: 0.5rem 1rem;
-    border: 2px solid var(--color-primary);
-    background-color: var(--color-primary);
+    background-color: #2563eb;
     color: white;
-    text-decoration: none;
     border-radius: 4px;
+    text-decoration: none;
 }
 
 #fdiv24 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 #fdiv24 img {
     width: 1.5rem;
     height: 1.5rem;
-    margin-right: 0.5rem;
 }
 
 #fdiv3 {
@@ -89,28 +110,42 @@ footer {
 
 #fdiv3 p {
     font-size: 0.9rem;
-    text-align: center;
+    text-align: left;
     color: white;
 }
 
-/* Media Queries para pantallas más grandes */
+/* RESPONSIVE PARA TABLETS Y ESCRITORIO */
 @media (min-width: 768px) {
-    #adiv {
+    #fdiv1 {
         flex-direction: row;
-        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
     }
 
-    aside, #notas {
-        width: 33%;
-        max-width: 350px;
+    #fdiv1 input {
+        margin-bottom: 0;
+    }
+
+    #fdiv1 a {
+        margin-top: 0;
     }
 
     #fdiv2 {
         flex-direction: row;
         justify-content: space-between;
+        gap: 2rem;
     }
 
     #fdiv21, #fdiv22, #fdiv23, #fdiv24 {
-        width: 25%;
+        width: 23%;
+    }
+
+    #fdiv24 {
+        justify-content: flex-start;
+    }
+
+    #fdiv3 p {
+        text-align: center;
     }
 }

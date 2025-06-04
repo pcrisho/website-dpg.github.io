@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
@@ -9,15 +9,13 @@
     --color-text: #21272A;
     /* Gris oscuro */
     --color-text-h2: #001D6C;
-
     /* 2do fondo */
-    --background-color-2: #F2F4F8
+    --background-color-2: #F2F4F8;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     color: var(--color-text);
-    margin: 20px;
 }
 
 h1 {
@@ -25,16 +23,17 @@ h1 {
     margin-top: 120px;
 }
 
-#resp{
+#resp {
     font-size: 13px;
     margin-top: 20px;
     margin-bottom: 6px;
 
 }
 
-#txare{
+#txare {
     color: gray;
-    pointer-events: none; /* Evita cualquier interacción */
+    pointer-events: none;
+    /* Evita cualquier interacción */
     user-select: none;
     width: 290px;
     height: 80px;
@@ -44,9 +43,10 @@ h1 {
     font-size: 15px;
 }
 
-#txesc{
+#txesc {
     color: gray;
-    pointer-events: none; /* Evita cualquier interacción */
+    pointer-events: none;
+    /* Evita cualquier interacción */
     user-select: none;
     border: none;
     border-bottom: 1px solid gray;
@@ -59,19 +59,19 @@ h1 {
     background-color: #f0f0f0;
 }
 
-#escp{
+#escp {
     font-size: 14px;
     margin-top: 15px;
 }
 
-aside{
+aside {
     background-color: white;
     width: 33%;
     padding: 20px;
     margin-left: 12px;
 }
 
-#escsel{
+#escsel {
     color: gray;
     border: none;
     border-bottom: 1px solid gray;
@@ -85,11 +85,11 @@ aside{
     appearance: none;
 }
 
-#titulo{
+#titulo {
     width: auto;
 }
 
-section{
+#notas {
     width: 30%;
     padding: 5px;
     flex-direction: row;
@@ -99,15 +99,152 @@ section{
     margin-left: 12px;
 }
 
-main{
+main {
     background-color: #dde9f0;
 }
 
-div{
+#adiv {
     background-color: #dde9f0;
     display: flex;
+    padding-bottom: 100px;
 }
 
-#titulo{
+#titulo {
     background-color: #dde9f0;
+}
+
+#divsec {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+#sabajo1 {
+    margin-bottom: 130px;
+    margin-top: 70px;
+    background-color: white;
+}
+
+#sabajo2 {
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+section img {
+    width: 400px;
+    height: 170px;
+    margin-right: 40px;
+}
+
+section h4 {
+    color: #001D6C;
+}
+
+section h2 {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: grey;
+}
+
+#fdivpadre{
+    display: flex;
+    flex-direction: column;
+}
+
+#fdivpadre, #fdiv1{
+    background-color: grey;
+    margin-left: 120px;
+    padding-bottom: 40px;
+    
+}
+
+#fdiv2{
+    background-color: grey;
+    margin-left: 120px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#fdiv21, #fdiv22, #fdiv23{
+    background-color: grey;
+}
+
+#fdiv1 img{
+ margin-top: 50px;
+ margin-right: 60px;
+ filter: grayscale(100%) brightness(4.9);
+}
+
+#fdiv1 input{
+ margin-top: 50px;
+ height: 50px;
+ width: 510px;
+ margin-right: 30px;
+}
+
+#fdiv1 a{
+ margin-top: 50px;
+ border: 10px solid #0F62FE;
+ text-decoration: none;
+ color: white;
+ background-color: #0F62FE;
+}
+
+#fdiv1, #fdiv2{
+    position: relative;
+}
+
+#fdiv1::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 120px); /* Resta el margen izquierdo para que no llegue al borde derecho */
+    height: 1px;
+    background-color: #fff;
+}
+
+#fdiv2::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: calc(100% - 120px); /* Resta el margen izquierdo para que no llegue al borde derecho */
+    height: 1px;
+    background-color: #fff;
+}
+
+#fdiv21, #fdiv22, #fdiv23{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+#fdiv24{
+    display: flex;
+    flex-direction: row;
+}
+
+#fh3{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+#fa{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+#fdiv3{
+    margin-top: 30px;
+    margin-left: 120px;
+}
+
+#fdiv3 p{
+    color: white;
 }

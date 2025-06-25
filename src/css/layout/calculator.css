@@ -13,6 +13,7 @@
 body {
     font-family: "Roboto", sans-serif;
     color: var(--color-text);
+    background-color: #dde9f0;
 }
 
 
@@ -39,7 +40,7 @@ main {
 /* Título específico */
 h1 {
     font-size: clamp(2rem, 5vw, 3rem);
-    margin: 0;
+    margin-top: 1rem;
     color: var(--color-text);
     border: none;
     width: 100%; /* Asegurar que el texto ocupe todo el ancho del contenedor */
@@ -58,7 +59,8 @@ h2 {
     gap: 1rem;
     padding: 1rem;
     background-color: #dde9f0;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 /* Media query para celulares (pantallas menores a 768px, por ejemplo) */
@@ -119,6 +121,34 @@ aside, #notas {
     user-select: none;
 }
 
+#txtnu{
+    width: 14rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+    color: gray;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    resize: none;
+    margin: 0.5rem 0.2rem;
+    user-select: none;
+}
+
+#txtne{
+    width: 4rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+    color: gray;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    resize: none;
+    margin: 0.5rem 0.2rem;
+    user-select: none;
+}
+
 #txare {
     width: 100%;
     max-width: 100%;
@@ -132,6 +162,7 @@ aside, #notas {
     margin: 0.5rem 0;
     pointer-events: none;
     user-select: none;
+    padding-bottom: 1.8rem;
 }
 
 #txare:nth-child(2) { /* "Promedio Ponderado" */
@@ -218,3 +249,10 @@ aside, #notas {
     margin: 0.5rem 0;
 }
 
+body, html {
+    overflow-x: hidden; /* Elimina cualquier scroll horizontal innecesario */
+}
+
+input, textarea, select, button {
+    max-width: 100%; /* Evita que se pasen del contenedor */
+}

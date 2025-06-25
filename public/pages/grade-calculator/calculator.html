@@ -101,25 +101,23 @@
 
 
     <main>
-        <aside id="titulo">
-            <h1>Calculadora de notas</h1>
-        </aside>
+        <h1>Calculadora de notas</h1>
         <div id="adiv">
 
             <aside>
                 <p id="escp">Escalas de notas</p>
                 <select id="escsel">
-                    <option selected>Por defecto (Perú)</option>
-                    <option>Argentina</option>
+                    <option value="1" selected>Por defecto (Perú)</option>
+                    <option value="2">Argentina</option>
                 </select>
 
                 <h2>Escala de notas</h2>
                 <p id="escp">Nota mínima</p>
-                <textarea id="txesc">0.0</textarea>
+                <textarea id="txesc" name="ntmin">0.0</textarea>
                 <p id="escp">Nota máxima</p>
-                <textarea id="txesc">20.0</textarea>
+                <textarea id="txesc" name="ntmax">20.0</textarea>
                 <p id="escp">Nota de aprobación</p>
-                <textarea id="txesc">13.0</textarea>
+                <textarea id="txesc" name="ntapr">13.0</textarea>
             </aside>
 
             <section id="notas">
@@ -128,15 +126,36 @@
                     <option selected>Por defecto</option>
                 </select>
                 <h2>Nombre ev.</h2>
+                <div id="notas-container">
+                    <div class="fila-nota" style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                        <span style="width: 60px;">Nota #1</span>
+                        <input type="number" placeholder="Ingrese un número" id="txtnu" class="nota-in">
+                        <input type="number" value="25" id="txtne" class="porc-in"> %
+                    </div>
 
+                    <div class="fila-nota" style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                        <span style="width: 60px;">Nota #2</span>
+                        <input type="number" placeholder="Ingrese un número" id="txtnu" class="nota-in">
+                        <input type="number" value="25" id="txtne" class="porc-in"> %
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+                    <button id="add-btn" style="background-color: #0F62FE; color: white; flex:1;">+ Agregar
+                        nota</button>
+                    <button id="remove-btn" style="background-color: #e74c3c; color: white; flex:1;">- Quitar
+                        nota</button>
+                </div>
+                <button id="calc-btn"
+                    style="background-color: #0F62FE; color: white; margin-top: 0.5rem; width: 100%;">Calcular</button>
             </section>
 
             <aside>
                 <h2>Resultados</h2>
                 <p id="resp">Promedio Ponderado</p>
-                <textarea id="txare">Tu promedio final es: ??</textarea>
+                <textarea id="txare" name="promfin">Tu promedio final es: ??</textarea>
                 <p id="resp">Estado</p>
-                <textarea id="txare">
+                <textarea id="txare" name="txtes">
 •  🎉 Aprobado (>11)
 •  ⚠️ En riesgo (10-11)
 •  ❌ Desaprobado (<10)
@@ -186,7 +205,8 @@
         <div id="fdivpadre">
             <div id="fdiv1">
                 <img src="../../assets/icons/logo.svg">
-                <input type="text" placeholder=" ✉︎ Ingresa tu correo para que te enteres de las últimas novedades de la página web">
+                <input type="text"
+                    placeholder=" ✉︎ Ingresa tu correo para que te enteres de las últimas novedades de la página web">
                 <a href="#" type="buttom"> Suscribete</a>
             </div>
 
@@ -235,5 +255,6 @@
     </footer>
 
 </body>
+<script src="../../../src/js/calculator.js"></script>
 
 </html>

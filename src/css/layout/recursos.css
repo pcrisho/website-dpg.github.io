@@ -1,0 +1,279 @@
+/* Banner */
+.hero {
+  background-color: #000;
+  color: #fff;
+  padding: 120px 20px;
+}
+
+.hero__container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 60px 20px; 
+}
+
+
+.hero__subtitle {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero__title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.hero__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.hero__btn {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.hero__btn--primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.hero__btn--secondary {
+  background-color: transparent;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+/* SECCIÓN DE CONTENIDO */
+.content-section {
+  padding: 0;
+}
+
+.content-wrapper {
+  width: 100%;
+  background-color: #fff;
+}
+
+.content-wrapper.gray {
+  background-color: #f2f2f2;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; 
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 280px;
+}
+
+.content-image img {
+  width: 400px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+}
+
+.content-text {
+  max-width: 400px;
+  padding: 20px 0;
+}
+
+.content-subtitle {
+  color: #0033a0;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.content-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.content-description {
+  color: #444;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.content-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* PREGUNTAS FRECUENTES */
+.faq-section {
+  background-color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.faq-subtitle {
+  color: #0033a0;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.faq-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0 40px;
+}
+
+.faq-container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-container details {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.faq-container summary {
+  font-weight: bold;
+  font-size: 15px;
+  list-style: none;
+  padding-right: 30px;
+  position: relative;
+}
+
+.faq-container summary::after {
+  content: "+";
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(0);
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+.faq-container details[open] summary::after {
+  content: "–";
+}
+
+.faq-container details[open] p {
+  background-color: #f8f9fb;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 6px;
+  color: #444;
+  font-size: 14px;
+}
+/* SECCIÓN DE CONTACTO */
+.contact-section {
+  background-color: #f2f2f2;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-subtitle {
+  color: #0033a0;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.contact-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  font-size: 16px;
+  color: #444;
+  margin-top: 30px;
+}
+
+.contact-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column !important;
+    text-align: center;
+    align-items: center;
+  }
+
+  .content-text {
+    max-width: 90%;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .content-image img {
+    width: 100%;
+    height: auto;
+    max-width: 90%;
+  }
+
+  .faq-container {
+    max-width: 90%;
+  }
+
+  .faq-title {
+    font-size: 26px;
+  }
+
+  .contact-title {
+    font-size: 24px;
+  }
+
+  .contact-text {
+    font-size: 15px;
+    margin-top: 25px;
+    padding: 0 10px;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,117 @@
+.hero {
+  background-color: #0077ff;
+  color: #fff;
+  padding: 120px 20px;
+}
+
+.hero__container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 60px 20px; 
+}
+
+.hero__subtitle {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 10rem;
+}
+
+.hero__title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-left: 10rem;
+}
+
+/* CONTENIDO GENERAL */
+#contenido {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra los bloques hijos */
+  padding: 2rem 0;
+}
+
+#conth3 {
+  color: #0F62FE;
+}
+
+/* MISION */
+#misioncont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px; /* limitar ancho */
+  padding: 1rem;
+}
+
+#misionimg {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
+#misiondivinfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+}
+
+/* VISION */
+#visioncont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: #dde9f0;
+}
+
+#visionimg {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
+#visiondivinfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+}
+
+/* ORIGENES */
+#origenescont {
+  text-align: center;
+  margin-top: 10rem;
+  max-width: 65rem;
+}
+
+#origenescont p{
+    margin-top: 2rem;
+}
+
+/* RESPONSIVO: Cambiar a columna en móviles */
+@media (max-width: 768px) {
+  #misioncont,
+  #visioncont {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #misiondivinfo,
+  #visiondivinfo {
+    align-items: center;
+  }
+
+  .hero__title,
+  .hero__subtitle {
+    margin-left: 0;
+    text-align: center;
+  }
+}

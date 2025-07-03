@@ -41,6 +41,8 @@
     <!-- Hojas de estilos de la página -->
     <link rel="stylesheet" href="../src/css/layout/header.css">
     <link rel="stylesheet" href="../src/css/layout/styles.css">
+    <link rel="stylesheet" href="../src/css/layout/footer.css">
+    <link rel="stylesheet" href="../src/css/layout/chatbot.css">
 
 </head>
 
@@ -66,7 +68,8 @@
                 </li>
 
                 <li class="nav__item">
-                    <a href="../public/pages/grade-calculator/calculator.html" class="nav__link">Calculadora de notas</a>
+                    <a href="../public/pages/grade-calculator/calculator.html" class="nav__link">Calculadora de
+                        notas</a>
                 </li>
 
                 <li class="nav__item">
@@ -598,11 +601,70 @@
 
         </section>
 
+        <div id="chatbot-toggle">💬</div>
 
+        <!-- Ventana de chatbot oculta inicialmente -->
+        <div id="chatbot-box" class="hidden">
+            <div id="chat-log"></div>
+            <input type="text" id="chat-input" placeholder="Escribe algo...">
+            <button id="chat-button">Reiniciar</button>
+        </div>
 
+        <script src="../src/js/chatbot.js"></script>
     </main>
 
+    <footer>
+        <div id="fdivpadre">
+            <div id="fdiv1">
+                <img src="../public/assets/icons/logo.svg">
+                <input type="text"
+                    placeholder=" ✉︎ Ingresa tu correo para que te enteres de las últimas novedades de la página web">
+                <a href="#" type="buttom"> Suscribete</a>
+            </div>
 
+            <div id="fdiv2">
+                <div id="fdiv21">
+                    <h3 id="fh3">Sobre nosotros</h3>
+                    <a id="fa" href="#">Conócenos</a>
+                    <a id="fa" href="#">Términos de uso</a>
+                    <a id="fa" href="#">Politicas de privacidad</a>
+                    <a id="fa" href="#">Quiero pertenecer a GP-TBF</a>
+                </div>
+
+                <div id="fdiv22">
+                    <h3 id="fh3">Comunidad</h3>
+                    <a id="fa" href="#">Calculadora de notas</a>
+                    <a id="fa" href="#">Foro y discusiones</a>
+                    <a id="fa" href="#">Cursos y material educativo</a>
+                    <a id="fa" href="#">La comunidad</a>
+                </div>
+
+                <div id="fdiv23">
+                    <h3 id="fh3">Atención al usuario</h3>
+                    <a id="fa" href="#">Preguntas frecuentes</a>
+                    <a id="fa" href="#">Portal de ayuda</a>
+                    <a id="fa" href="#">Formulario de consultas</a>
+                    <a id="fa" href="#">Quisiera sugerir alguna mejora</a>
+                </div>
+
+                <div id="fdiv24">
+                    <h3 id="fh3">Síguenos en</h3>
+                    <img src="../../assets/icons/">
+                    <img src="../../assets/icons/">
+                    <img src="../../assets/icons/">
+                    <img src="../../assets/icons/">
+                    <img src="../../assets/icons/">
+                </div>
+            </div>
+
+            <div id="fdiv3">
+                <p>Panamericana Sur KM 19, Villa - Lima, Perú.</p>
+                <p>Conectando! by GP - TBF @ 2025. Todos los derechos reservados.</p>
+            </div>
+
+        </div>
+
+    </footer>
 </body>
 
 

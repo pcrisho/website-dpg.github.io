@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="../../../src/css/layout/header.css">
     <link rel="stylesheet" href="../../../src/css/layout/about-us.css">
     <link rel="stylesheet" href="../../../src/css/layout/footer.css">
+    <link rel="stylesheet" href="../../../src/css/layout/chatbot.css">
 </head>
 
 <body>
@@ -288,6 +289,28 @@
                 <div id="origenescont">
                     <h3 id="conth3"> PREGUNTAS FRECUENTES</h3>
                     <h1>Encuentra respuestas rápidas a tus dudas más comunes</h1>
+                    <div class="faq-container">
+                        <details>
+                            <summary>¿Qué tipo de recursos encontraré en esta plataforma?</summary>
+                            <p>Cursos, webinars, artículos, herramientas y más recursos educativos.</p>
+                        </details>
+                        <details>
+                            <summary>¿Los recursos son exclusivamente para estudiantes de la Científica?</summary>
+                            <p>No, están disponibles para cualquier persona interesada.</p>
+                        </details>
+                        <details>
+                            <summary>¿Debo registrarme para usar todas las funcionalidades?</summary>
+                            <p>En algunos casos sí, como para guardar tu progreso o recibir certificados.</p>
+                        </details>
+                        <details>
+                            <summary>¿En qué dispositivos puedo usar la plataforma?</summary>
+                            <p>Está optimizada para computadoras, tablets y smartphones.</p>
+                        </details>
+                        <details>
+                            <summary>¿Puedo aportar recursos o ayudar a mejorar la plataforma?</summary>
+                            <p>Sí, puedes contactarnos para colaborar o enviar sugerencias.</p>
+                        </details>
+                    </div>
                 </div>
             </div>
 
@@ -306,6 +329,18 @@
                 </div>
             </div>
         </article>
+
+
+        <div id="chatbot-toggle">💬</div>
+
+        <!-- Ventana de chatbot oculta inicialmente -->
+        <div id="chatbot-box" class="hidden">
+            <div id="chat-log"></div>
+            <input type="text" id="chat-input" placeholder="Escribe algo...">
+            <button id="chat-button">Reiniciar</button>
+        </div>
+
+        <script src="../../../src/js/chatbot.js"></script>
 
     </main>
 

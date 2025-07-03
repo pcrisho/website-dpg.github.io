@@ -366,3 +366,56 @@
 #preguntascont{
   background-color: #dde9f0;
 }
+
+#origenescont h1{
+  margin-bottom: 1rem;
+}
+
+.faq-container {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-container details {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.faq-container summary {
+  font-weight: bold;
+  font-size: 15px;
+  list-style: none;
+  padding-right: 30px;
+  position: relative;
+}
+
+.faq-container summary::after {
+  content: "+";
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateY(0);
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+.faq-container details[open] summary::after {
+  content: "–";
+}
+
+.faq-container details[open] p {
+  background-color: #f8f9fb;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 6px;
+  color: #444;
+  font-size: 14px;
+}

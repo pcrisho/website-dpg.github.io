@@ -41,6 +41,7 @@
     <link rel="stylesheet" href="../../../src/css/layout/header.css">
     <link rel="stylesheet" href="../../../src/css/layout/calculator.css">
     <link rel="stylesheet" href="../../../src/css/layout/footer.css">
+    <link rel="stylesheet" href="../../../src/css/layout/chatbot.css">
 </head>
 
 <body>
@@ -197,7 +198,16 @@
                 </center>
             </Section>
         </div>
+        <div id="chatbot-toggle">💬</div>
 
+        <!-- Ventana de chatbot oculta inicialmente -->
+        <div id="chatbot-box" class="hidden">
+            <div id="chat-log"></div>
+            <input type="text" id="chat-input" placeholder="Escribe algo...">
+            <button id="chat-button">Reiniciar</button>
+        </div>
+
+        <script src="../../../src/js/chatbot.js"></script>
 
     </main>
 

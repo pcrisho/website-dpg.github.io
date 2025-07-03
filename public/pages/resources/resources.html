@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="../../../src/css/layout/header.css">
     <link rel="stylesheet" href="../../../src/css/layout/recursos.css">
     <link rel="stylesheet" href="../../../src/css/layout/footer.css">
+    <link rel="stylesheet" href="../../../src/css/layout/chatbot.css">
 </head>
 
 <body>
@@ -103,7 +104,10 @@
                         <p class="content-subtitle">FUNDACIÓN TELEFÓNICA</p>
                         <h2 class="content-title">Impulsando el Futuro Digital</h2>
                         <p class="content-description">
-                            Fundación Telefónica es una organización comprometida con el desarrollo digital inclusivo, promoviendo la educación, empleabilidad y cultura digital a nivel global. A través de programas innovadores, conecta a personas con oportunidades de formación y crecimiento en la era tecnológica.
+                            Fundación Telefónica es una organización comprometida con el desarrollo digital inclusivo,
+                            promoviendo la educación, empleabilidad y cultura digital a nivel global. A través de
+                            programas innovadores, conecta a personas con oportunidades de formación y crecimiento en la
+                            era tecnológica.
                         </p>
                         <a href="#" class="content-btn">Acceder a la plataforma</a>
                     </div>
@@ -116,7 +120,11 @@
                         <p class="content-subtitle">GOOGLE ACTÍVATE</p>
                         <h2 class="content-title">Formación Digital para el Futuro</h2>
                         <p class="content-description">
-                            Google Activate es una plataforma de educación gratuita creada por Google, diseñada para impulsar el aprendizaje en áreas clave como marketing digital, desarrollo web, analítica de datos y habilidades digitales. Ofrece cursos certificados que ayudan a mejorar la empleabilidad y el crecimiento profesional, permitiendo a los usuarios adquirir conocimientos esenciales para el mundo digital.
+                            Google Activate es una plataforma de educación gratuita creada por Google, diseñada para
+                            impulsar el aprendizaje en áreas clave como marketing digital, desarrollo web, analítica de
+                            datos y habilidades digitales. Ofrece cursos certificados que ayudan a mejorar la
+                            empleabilidad y el crecimiento profesional, permitiendo a los usuarios adquirir
+                            conocimientos esenciales para el mundo digital.
                         </p>
                         <a href="#" class="content-btn">Acceder a la plataforma</a>
                     </div>
@@ -134,7 +142,11 @@
                     <p class="content-subtitle">CISCO NETWORKING ACADEMY</p>
                     <h2 class="content-title">Formacion en Tecnología y Ciberseguridad</h2>
                     <p class="content-description">
-                        Cisco Networking Academy es un programa global de educación tecnológica que ofrece formación en redes, ciberseguridad, programación e inteligencia artificial. Con cursos gratuitos y certificaciones reconocidas, ayuda a estudiantes y profesionales a desarrollar habilidades clave para el mundo digital. Desde su creación, ha capacitado a millones de personas en más de 190 países, conectándolas con oportunidades laborales en el sector tecnológico.
+                        Cisco Networking Academy es un programa global de educación tecnológica que ofrece formación en
+                        redes, ciberseguridad, programación e inteligencia artificial. Con cursos gratuitos y
+                        certificaciones reconocidas, ayuda a estudiantes y profesionales a desarrollar habilidades clave
+                        para el mundo digital. Desde su creación, ha capacitado a millones de personas en más de 190
+                        países, conectándolas con oportunidades laborales en el sector tecnológico.
                     </p>
                     <a href="#" class="content-btn">Acceder a la plataforma</a>
                 </div>
@@ -146,7 +158,10 @@
                         <p class="content-subtitle">INTERBANK APRENDEMÁS</p>
                         <h2 class="content-title">Educacion Financiera para el Éxito</h2>
                         <p class="content-description">
-                            Interbank Aprendemás es una plataforma de aprendizaje gratuita diseñada para impulsar el desarrollo financiero y profesional de los peruanos. Ofrece cursos, webinars y herramientas interactivas sobre educación financiera, emprendimiento, crecimiento personal y gestión empresarial, ayudando a mejorar la empleabilidad y la toma de decisiones económicas.
+                            Interbank Aprendemás es una plataforma de aprendizaje gratuita diseñada para impulsar el
+                            desarrollo financiero y profesional de los peruanos. Ofrece cursos, webinars y herramientas
+                            interactivas sobre educación financiera, emprendimiento, crecimiento personal y gestión
+                            empresarial, ayudando a mejorar la empleabilidad y la toma de decisiones económicas.
                         </p>
                         <a href="#" class="content-btn">Acceder a la plataforma</a>
                     </div>
@@ -194,6 +209,18 @@
                 Síguenos en nuestras redes para más novedades y actualizaciones.
             </p>
         </section>
+
+
+        <div id="chatbot-toggle">💬</div>
+
+        <!-- Ventana de chatbot oculta inicialmente -->
+        <div id="chatbot-box" class="hidden">
+            <div id="chat-log"></div>
+            <input type="text" id="chat-input" placeholder="Escribe algo...">
+            <button id="chat-button">Reiniciar</button>
+        </div>
+
+        <script src="../../../src/js/chatbot.js"></script>
     </main>
 
 

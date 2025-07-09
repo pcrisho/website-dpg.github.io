@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--HTML Meta Tags-->
+    <title>Calculadora - Sitio web orientado a estudiantes</title>
+    <meta name="description"
+        content="Impulsa tu crecimiento académico con recursos hechos para ti. Conectando! es la primera página orientada al crecimiento de los estudiantes universitarios del Perú." />
+
+    <!--Facebook Meta Tags-->
+    <meta property="og:url" content="//en_proceso" />
+    <meta property="og:type" content="website" />
+    <meta property="og:tittle"
+        content="Impulsa tu crecimiento académico con recursos hechos para ti. Conectando! es la primera página orientada al crecimiento de los estudiantes universitarios del Perú." />
+    <meta property="og:description"
+        content="Impulsa tu crecimiento académico con recursos hechos para ti. Conectando! es la primera página orientada al crecimiento de los estudiantes universitarios del Perú." />
+    <meta property="og:image" content="//en_proceso" />
+    <meta property="og:locale" content="es_ES" />
+
+    <!--Twitter Meta Tags-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Conectando" />
+    <meta name="twitter:creator" content="@paolocriss" />
+    <meta name="twitter:tittle"
+        content="Impulsa tu crecimiento académico con recursos hechos para ti. Conectando! es la primera página orientada al crecimiento de los estudiantes universitarios del Perú." />
+    <meta name="twitter:description"
+        content="Impulsa tu crecimiento académico con recursos hechos para ti. Conectando! es la primera página orientada al crecimiento de los estudiantes universitarios del Perú." />
+    <meta name="twitter:image" content="//en_proceso" />
+
+    <!-- Llamado a la fuente y sus pesos: 100, 300, 400, 500, 700, 900 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Ícono de la página -->
+    <link rel="icon" href="../../assets/icons/book.svg">
+
+    <!-- Hojas de estilos de la página -->
+    <link rel="stylesheet" href="../../../src/css/layout/header.css">
+    <link rel="stylesheet" href="../../../src/css/layout/calculator.css">
+    <link rel="stylesheet" href="../../../src/css/layout/footer.css">
+    <link rel="stylesheet" href="../../../src/css/layout/chatbot.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="nav__container">
+
+            <figure class="nav__figure">
+                <a href="../../../../public/index.html"><img src="../../assets/icons/logo.svg" class="nav__logo"></a>
+            </figure>
+
+            <label class="nav__toggle">
+                <input type="checkbox" id="menu-input" class="nav__input">
+            </label>
+
+            <ul class="nav__list">
+
+                <li class="nav__item">
+                    <a href="../../index.html" class="nav__link">Inicio</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="../../pages/about/about-us.html" class="nav__link">Conócenos</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Foro</a>
+                </li>
+
+                <li class="nav__item">
+                    <a href="../resources/resources.html" class="nav__link">Recursos</a>
+                </li>
+
+                <li class="nav__list__cta">
+
+                    <ul class="nav__list__cta">
+
+                        <a href="" class="nav__item__btn-r">
+                            <li class="nav__link__btn-r">Regístrate</li>
+                        </a>
+
+                        <a href="" class="nav__item__btn-is">
+                            <li class="nav__link__btn-is">Iniciar sesión</li>
+                        </a>
+
+
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+
+    <main>
+        <h1>Calculadora de notas</h1>
+        <div id="adiv">
+
+            <aside>
+                <p id="escp">Escalas de notas</p>
+                <select id="escsel">
+                    <option value="1" selected>Por defecto (Perú)</option>
+                    <option value="2">Argentina</option>
+                </select>
+
+                <h2>Escala de notas</h2>
+                <p id="escp">Nota mínima</p>
+                <textarea id="txesc" name="ntmin">0.0</textarea>
+                <p id="escp">Nota máxima</p>
+                <textarea id="txesc" name="ntmax">20.0</textarea>
+                <p id="escp">Nota de aprobación</p>
+                <textarea id="txesc" name="ntapr">13.0</textarea>
+            </aside>
+
+            <section id="notas">
+                <p id="escp">Ponderados universitarios</p>
+                <select id="escsel">
+                    <option selected>Por defecto</option>
+                </select>
+                <h2>Nombre ev.</h2>
+                <div id="notas-container">
+                    <div class="fila-nota" style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                        <span style="width: 60px;">Nota #1</span>
+                        <input type="number" placeholder="Ingrese un número" id="txtnu" class="nota-in">
+                        <input type="number" value="25" id="txtne" class="porc-in"> %
+                    </div>
+
+                    <div class="fila-nota" style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                        <span style="width: 60px;">Nota #2</span>
+                        <input type="number" placeholder="Ingrese un número" id="txtnu" class="nota-in">
+                        <input type="number" value="25" id="txtne" class="porc-in"> %
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 0.5rem; margin-top: 0.5rem;">
+                    <button id="add-btn" style="background-color: #0F62FE; color: white; flex:1;">+ Agregar
+                        nota</button>
+                    <button id="remove-btn" style="background-color: #e74c3c; color: white; flex:1;">- Quitar
+                        nota</button>
+                </div>
+                <button id="calc-btn"
+                    style="background-color: #0F62FE; color: white; margin-top: 0.5rem; width: 100%;">Calcular</button>
+            </section>
+
+            <aside>
+                <h2>Resultados</h2>
+                <p id="resp">Promedio Ponderado</p>
+                <textarea id="txare" name="promfin">Tu promedio final es: ??</textarea>
+                <p id="resp">Estado</p>
+                <textarea id="txare" name="txtes">
+•  🎉 Aprobado (>11)
+•  ⚠️ En riesgo (10-11)
+•  ❌ Desaprobado (<10)
+            </textarea>
+                <p id="resp">Juego de notas</p>
+                <textarea
+                    id="txare">Deja en blanco una de las notas y te daremos una simulación de resultados para que verifiques qué notas necesitas</textarea>
+            </aside>
+
+        </div>
+
+        <div id="divsec">
+            <Section id="sabajo1">
+                <center>
+                    <table>
+                        <tr>
+                            <td><img src="../../assets/images/paolo-crisostomo.jpg"></td>
+                            <td>
+                                <h4>INSTRUCCIONES</h4>
+                                <h2>📋 Cómo utilizar la calculadora</h2>
+                                <ol>
+                                    <li>Escribe el nombre de cada evaluación (parcial, final, trabajo, etc.).</li>
+                                    <li>Ingresa la nota obtenida y el peso (en %) que representa.</li>
+                                    <li>Haz clic en “Calcular promedio” para obtener tu nota final ponderada.</li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </Section>
+
+            <Section id="sabajo2">
+                <center>
+                    <h4>A TRAVÉS DE NOSOTROS</h4>
+                    <h2>📫 Contáctanos</h2>
+                    <p>¿Tienes una sugerencia o quieres colaborar?</p>
+                    <p>Escríbenos a: contacto@conectando.pe</p>
+                    <p>Síguenos en nuestras redes para más novedades y actualizaciones.</p>
+                </center>
+            </Section>
+        </div>
+        <div id="chatbot-toggle">💬</div>
+
+        <!-- Ventana de chatbot oculta inicialmente -->
+        <div id="chatbot-box" class="hidden">
+            <div id="chat-log"></div>
+            <input type="text" id="chat-input" placeholder="Escribe algo...">
+            <button id="chat-button">Reiniciar</button>
+        </div>
+
+        <script src="../../../src/js/chatbot.js"></script>
+
+    </main>
+
+    <footer>
+        <div id="fdivpadre">
+            <div id="fdiv1">
+                <img src="../../assets/icons/logo.svg">
+                <input type="text"
+                    placeholder=" ✉︎ Ingresa tu correo para que te enteres de las últimas novedades de la página web">
+                <a href="#" type="buttom"> Suscribete</a>
+            </div>
+
+            <div id="fdiv2">
+                <div id="fdiv21">
+                    <h3 id="fh3">Sobre nosotros</h3>
+                    <a id="fa" href="#">Conócenos</a>
+                    <a id="fa" href="#">Términos de uso</a>
+                    <a id="fa" href="#">Politicas de privacidad</a>
+                    <a id="fa" href="#">Quiero pertenecer a GP-TBF</a>
+                </div>
+
+                <div id="fdiv22">
+                    <h3 id="fh3">Comunidad</h3>
+                    <a id="fa" href="#">Calculadora de notas</a>
+                    <a id="fa" href="#">Foro y discusiones</a>
+                    <a id="fa" href="#">Cursos y material educativo</a>
+                    <a id="fa" href="#">La comunidad</a>
+                </div>
+
+                <div id="fdiv23">
+                    <h3 id="fh3">Atención al usuario</h3>
+                    <a id="fa" href="#">Preguntas frecuentes</a>
+                    <a id="fa" href="#">Portal de ayuda</a>
+                    <a id="fa" href="#">Formulario de consultas</a>
+                    <a id="fa" href="#">Quisiera sugerir alguna mejora</a>
+                </div>
+
+                <div id="fdiv24">
+                    <h3 id="fh3">Síguenos en</h3>
+                    <div>
+                        <img src="../../assets/icons/youtube.svg">
+                        <img src="../../assets/icons/facebook.svg">
+                        <img src="../../assets/icons/twitter.svg">
+                        <img src="../../assets/icons/instagram.svg">
+                        <img src="../../assets/icons/linkedin.svg">
+                    </div>
+                </div>
+            </div>
+
+            <div id="fdiv3">
+                <p>Panamericana Sur KM 19, Villa - Lima, Perú.</p>
+                <p>Conectando! by GP - TBF @ 2025. Todos los derechos reservados.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+<script src="../../../src/js/calculator.js"></script>
+
+</html>

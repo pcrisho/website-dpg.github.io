@@ -359,7 +359,7 @@ TESTIMONIOS IRÁ EN OTRA HORA CSS
 }
 
 #equipo .container__grid .card__img{
-    height: auto;
+    height: 20rem;
     object-fit: cover
 }
 

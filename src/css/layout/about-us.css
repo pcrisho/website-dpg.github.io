@@ -419,3 +419,14 @@
   color: #444;
   font-size: 14px;
 }
+.container {
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 80px;
+}
+#equipo{
+  background-color: #dde9f0;
+}

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--HTML Meta Tags-->
-    <title>Calculadora - Sitio web orientado a estudiantes</title>
+    <title>Recursos - Sitio web orientado a estudiantes</title>
     <meta name="description"
         content="Impulsa tu crecimiento académico con recursos hechos para ti. Conectando! es la primera página orientada al crecimiento de los estudiantes universitarios del Perú." />
 
@@ -50,7 +50,7 @@
     <header>
         <nav class="nav__container">
             <figure class="nav__figure">
-                <a href="../../../../public/index.html"><img src="../../assets/icons/logo.svg" class="nav__logo"></a>
+                <img src="../../assets/icons/logo.svg" class="nav__logo">
             </figure>
             <label class="nav__toggle">
                 <input type="checkbox" id="menu-input" class="nav__input">
@@ -68,13 +68,13 @@
                 <li class="nav__item">
                     <a href="./pages/resources/resources.html" class="nav__link">Foro</a>
                 </li>
-                <li class="nav__list__cta">
-                    <ul class="nav__list__cta">
-                        <a href="" class="nav__item__btn-r">
-                            <li class="nav__link__btn-r">Regístrate</li>
+                <li class="nav_list_cta">
+                    <ul class="nav_list_cta">
+                        <a href="" class="nav_item_btn-r">
+                            <li class="nav_link_btn-r">Regístrate</li>
                         </a>
-                        <a href="" class="nav__item__btn-is">
-                            <li class="nav__link__btn-is">Iniciar sesión</li>
+                        <a href="" class="nav_item_btn-is">
+                            <li class="nav_link_btn-is">Iniciar sesión</li>
                         </a>
                     </ul>
                 </li>
@@ -88,89 +88,80 @@
                 <p class="hero__subtitle">RECURSOS/CURSOS Y CERTIFICACIONES</p>
                 <h1 class="hero__title">Cursos y Certificaciones que te pueden interesar</h1>
                 <div class="hero__actions">
-                    <a href="#" class="hero__btn hero__btn--primary">Revisar plataformas</a>
-                    <a href="#" class="hero__btn hero__btn--secondary">Revisar rutas de aprendizaje</a>
+                    <a href="#" class="hero_btn hero_btn--primary">Revisar plataformas</a>
+                    <a href="#" class="hero_btn hero_btn--secondary">Revisar rutas de aprendizaje</a>
                 </div>
             </div>
         </section>
         <!-- RECURSOS ACADEMICOS -->
         <section class="content-section">
-            <div class="content-wrapper">
-                <div class="content-container image-left">
+            <button class="carrusel-btn left" onclick="moverCarrusel(-1)">&#10094;</button>
+            <div class="carrusel-container" id="carrusel">
+
+                <div class="carrusel-item">
                     <div class="content-image">
-                        <img src="/public/assets/images/hero-banner.jpg" alt="Imagen de prueba">
+                        <img src="/public/assets/images/hero-banner.jpg" alt="Fundación Telefónica">
                     </div>
                     <div class="content-text">
                         <p class="content-subtitle">FUNDACIÓN TELEFÓNICA</p>
                         <h2 class="content-title">Impulsando el Futuro Digital</h2>
                         <p class="content-description">
-                            Fundación Telefónica es una organización comprometida con el desarrollo digital inclusivo,
-                            promoviendo la educación, empleabilidad y cultura digital a nivel global. A través de
-                            programas innovadores, conecta a personas con oportunidades de formación y crecimiento en la
-                            era tecnológica.
+                            Fundación Telefónica promueve la educación y cultura digital para el desarrollo de
+                            oportunidades tecnológicas inclusivas.
                         </p>
                         <a href="#" class="content-btn">Acceder a la plataforma</a>
                     </div>
                 </div>
-            </div>
 
-            <div class="content-wrapper gray">
-                <div class="content-container image-right">
+                <div class="carrusel-item">
+                    <div class="content-image">
+                        <img src="/public/assets/images/hero-banner.jpg" alt="Google Activate">
+                    </div>
                     <div class="content-text">
                         <p class="content-subtitle">GOOGLE ACTÍVATE</p>
                         <h2 class="content-title">Formación Digital para el Futuro</h2>
                         <p class="content-description">
-                            Google Activate es una plataforma de educación gratuita creada por Google, diseñada para
-                            impulsar el aprendizaje en áreas clave como marketing digital, desarrollo web, analítica de
-                            datos y habilidades digitales. Ofrece cursos certificados que ayudan a mejorar la
-                            empleabilidad y el crecimiento profesional, permitiendo a los usuarios adquirir
-                            conocimientos esenciales para el mundo digital.
+                            Google Activate ofrece cursos gratuitos en habilidades digitales, certificados y orientados
+                            al desarrollo profesional.
                         </p>
                         <a href="#" class="content-btn">Acceder a la plataforma</a>
                     </div>
+                </div>
+
+                <div class="carrusel-item">
                     <div class="content-image">
-                        <img src="/public/assets/images/hero-banner.jpg" alt="Imagen de prueba">
+                        <img src="/public/assets/images/hero-banner.jpg" alt="Cisco Networking Academy">
+                    </div>
+                    <div class="content-text">
+                        <p class="content-subtitle">CISCO NETWORKING ACADEMY</p>
+                        <h2 class="content-title">Tecnología y Ciberseguridad</h2>
+                        <p class="content-description">
+                            Cisco Academy brinda formación en redes y ciberseguridad con alcance global y
+                            certificaciones reconocidas.
+                        </p>
+                        <a href="#" class="content-btn">Acceder a la plataforma</a>
                     </div>
                 </div>
-            </div>
 
-            <div class="content-container image-left">
-                <div class="content-image">
-                    <img src="/public/assets/images/hero-banner.jpg" alt="Imagen de prueba">
-                </div>
-                <div class="content-text">
-                    <p class="content-subtitle">CISCO NETWORKING ACADEMY</p>
-                    <h2 class="content-title">Formacion en Tecnología y Ciberseguridad</h2>
-                    <p class="content-description">
-                        Cisco Networking Academy es un programa global de educación tecnológica que ofrece formación en
-                        redes, ciberseguridad, programación e inteligencia artificial. Con cursos gratuitos y
-                        certificaciones reconocidas, ayuda a estudiantes y profesionales a desarrollar habilidades clave
-                        para el mundo digital. Desde su creación, ha capacitado a millones de personas en más de 190
-                        países, conectándolas con oportunidades laborales en el sector tecnológico.
-                    </p>
-                    <a href="#" class="content-btn">Acceder a la plataforma</a>
-                </div>
-            </div>
-
-            <div class="content-wrapper gray">
-                <div class="content-container image-right">
+                <div class="carrusel-item">
+                    <div class="content-image">
+                        <img src="/public/assets/images/hero-banner.jpg" alt="Interbank Aprendemás">
+                    </div>
                     <div class="content-text">
                         <p class="content-subtitle">INTERBANK APRENDEMÁS</p>
-                        <h2 class="content-title">Educacion Financiera para el Éxito</h2>
+                        <h2 class="content-title">Educación Financiera</h2>
                         <p class="content-description">
-                            Interbank Aprendemás es una plataforma de aprendizaje gratuita diseñada para impulsar el
-                            desarrollo financiero y profesional de los peruanos. Ofrece cursos, webinars y herramientas
-                            interactivas sobre educación financiera, emprendimiento, crecimiento personal y gestión
-                            empresarial, ayudando a mejorar la empleabilidad y la toma de decisiones económicas.
+                            Plataforma que impulsa la educación financiera y el emprendimiento para mejorar la calidad
+                            de vida.
                         </p>
                         <a href="#" class="content-btn">Acceder a la plataforma</a>
                     </div>
-                    <div class="content-image">
-                        <img src="/public/assets/images/hero-banner.jpg" alt="Imagen de prueba">
-                    </div>
                 </div>
+
             </div>
+            <button class="carrusel-btn right" onclick="moverCarrusel(1)">&#10095;</button>
         </section>
+
         <!-- PREGUNTAS FRECUENTES -->
         <section class="faq-section">
             <h3 class="faq-subtitle">PREGUNTAS FRECUENTES</h3>
@@ -222,6 +213,7 @@
 
         <script src="../../../src/js/chatbot.js"></script>
     </main>
+
 
 
     <footer>
@@ -278,7 +270,6 @@
         </div>
 
     </footer>
-
+    <script src="../../../src/js/recursos.js"></script>
 </body>
-
 </html>

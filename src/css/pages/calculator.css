@@ -13,13 +13,13 @@
 body {
     font-family: "Roboto", sans-serif;
     color: var(--color-text);
-    background-color: #dde9f0;
+    background-color: #ffffff;
 }
 
 
 /* Main */
 main {
-    background-color: #dde9f0;
+    background-color: #ffffff;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -38,20 +38,6 @@ main {
 }
 
 /* Título específico */
-h1 {
-    font-size: clamp(2rem, 5vw, 3rem);
-    margin-top: 1rem;
-    color: var(--color-text);
-    border: none;
-    width: 100%; /* Asegurar que el texto ocupe todo el ancho del contenedor */
-    padding: 0 5%; /* Pequeño padding lateral para no pegar el texto a los bordes */
-}
-
-h2 {
-    font-size: 1.25rem;
-    margin: 1rem 0 0.5rem;
-    color: var(--color-text-h2);
-}
 
 #adiv {
     display: flex;
@@ -247,6 +233,10 @@ aside, #notas {
 #sabajo2 p {
     font-size: 0.9rem;
     margin: 0.5rem 0;
+}
+
+#INSTRUCCIONES {
+    background-color: #F2F4F8;
 }
 
 body, html {

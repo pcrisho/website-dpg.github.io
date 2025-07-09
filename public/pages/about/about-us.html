@@ -35,13 +35,15 @@
         rel="stylesheet">
 
     <!-- Ícono de la página -->
-    <link rel="icon" href="../../assets/icons/book.svg">
+    <link rel="icon" href="../../../assets/icons/book.svg">
 
     <!-- Hojas de estilos de la página -->
     <link rel="stylesheet" href="../../../src/css/layout/header.css">
-    <link rel="stylesheet" href="../../../src/css/layout/about-us.css">
+    <link rel="stylesheet" href="../../../src/css/layout/styles.css">
+    <link rel="stylesheet" href="../../../src/css/pages/about-us.css">
     <link rel="stylesheet" href="../../../src/css/layout/footer.css">
-    <link rel="stylesheet" href="../../../src/css/layout/chatbot.css">
+    <link rel="stylesheet" href="../../../src/css/components/chatbot.css">
+    <link rel="stylesheet" href="../../../src/css/layout/media-queries.css">
 </head>
 
 <body>
@@ -62,15 +64,15 @@
             <ul class="nav__list">
 
                 <li class="nav__item">
-                    <a href="./pages/about/about-us.html" class="nav__link">Conócenos</a>
+                    <a href="./about-us.html" class="nav__link">Conócenos</a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="./pages/grade-calculator/calculator.html" class="nav__link">Calculadora de notas</a>
+                    <a href="../grade-calculator/calculator.html" class="nav__link">Calculadora de notas</a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="./pages/resources/resources.html" class="nav__link">Recursos</a>
+                    <a href="../resources/resources.html" class="nav__link">Recursos</a>
                 </li>
 
 
@@ -326,58 +328,74 @@
     </main>
 
     <footer>
-        <div id="fdivpadre">
-            <div id="fdiv1">
-                <img src="../../assets/icons/logo.svg">
-                <input type="text"
-                    placeholder=" ✉︎ Ingresa tu correo para que te enteres de las últimas novedades de la página web">
-                <a href="#" type="buttom"> Suscribete</a>
+        <div class="container">
+
+            <div class="footer-row">
+                <div class="footer-links">
+                    <img src="../../assets/icons/logo-white.svg" alt="Logotipo de Conectando!">
+                </div>
             </div>
 
-            <div id="fdiv2">
-                <div id="fdiv21">
-                    <h3 id="fh3">Sobre nosotros</h3>
-                    <a id="fa" href="#">Conócenos</a>
-                    <a id="fa" href="#">Términos de uso</a>
-                    <a id="fa" href="#">Politicas de privacidad</a>
-                    <a id="fa" href="#">Quiero pertenecer a GP-TBF</a>
-                </div>
+            <div class="footer-row">
 
-                <div id="fdiv22">
-                    <h3 id="fh3">Comunidad</h3>
-                    <a id="fa" href="#">Calculadora de notas</a>
-                    <a id="fa" href="#">Foro y discusiones</a>
-                    <a id="fa" href="#">Cursos y material educativo</a>
-                    <a id="fa" href="#">La comunidad</a>
-                </div>
+                <div class="footer-divider"></div>
 
-                <div id="fdiv23">
-                    <h3 id="fh3">Atención al usuario</h3>
-                    <a id="fa" href="#">Preguntas frecuentes</a>
-                    <a id="fa" href="#">Portal de ayuda</a>
-                    <a id="fa" href="#">Formulario de consultas</a>
-                    <a id="fa" href="#">Quisiera sugerir alguna mejora</a>
-                </div>
+            </div>
 
-                <div id="fdiv24">
-                    <h3 id="fh3">Síguenos en</h3>
-                    <div>
-                        <img src="../../assets/icons/youtube.svg">
-                        <img src="../../assets/icons/facebook.svg">
-                        <img src="../../assets/icons/twitter.svg">
-                        <img src="../../assets/icons/instagram.svg">
-                        <img src="../../assets/icons/linkedin.svg">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Sobre nosotros</h4>
+                    <ul>
+                        <li><a href="">Conócenos</a></li>
+                        <li><a href="">Términos de uso</a></li>
+                        <li><a href="">Políticas de privacidad</a></li>
+                        <li><a href="">Quiero pertenecer a GP-TBF</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Comunidad</h4>
+                    <ul>
+                        <li><a href="">Calculadora de notas</a></li>
+                        <li><a href="">Foro y discusiones</a></li>
+                        <li><a href="">Cursos y rutas de aprendizaje</a></li>
+                        <li><a href="">La comunidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Atención al usuario</h4>
+                    <ul>
+                        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                        <li><a href="">Portal de ayuda</a></li>
+                        <li><a href="">Formulario de consultas</a></li>
+                        <li><a href="">Quiero sugerir algunas mejoras</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social-media">
+                    <h4>Síguenos en</h4>
+                    <div class="social-links">
+                        <a href=""><img src="../../assets/icons/linkedin-logo-white.svg" alt="Logo de LinkedIn"></a>
+                        <a href=""><img src="../../assets/icons/github-logo-white.svg" alt="Logo de Github"></a>
+                        <a href=""><img src="../../assets/icons/instagram-logo-white.svg" alt="Logo de Instagram"></a>
                     </div>
                 </div>
+
             </div>
 
-            <div id="fdiv3">
-                <p>Panamericana Sur KM 19, Villa - Lima, Perú.</p>
-                <p>Conectando! by GP - TBF @ 2025. Todos los derechos reservados.</p>
+            <div class="footer-row">
+
+                <div class="footer-divider"></div>
+
             </div>
 
+            <div class="footer-row">
+
+                <div class="footer-lower">
+                    <p>Panamericana Sur KM 19, Villa - Lima, Perú.</p>
+                    <p>© 2025 Conectando! by GP - TBF. Todos los derechos reservados</p>
+                </div>
+
+            </div>
         </div>
-
     </footer>
 
 </body>

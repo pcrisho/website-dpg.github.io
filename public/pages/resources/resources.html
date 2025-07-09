@@ -41,9 +41,13 @@
 
     <!-- Hojas de estilos de la página -->
     <link rel="stylesheet" href="../../../src/css/layout/header.css">
+    <link rel="stylesheet" href="../../../src/css/components/chatbot.css">
+    <link rel="stylesheet" href="../../../src/css/layout/styles.css">
     <link rel="stylesheet" href="../../../src/css/pages/resourses.css">
     <link rel="stylesheet" href="../../../src/css/layout/footer.css">
-    <link rel="stylesheet" href="../../../src/css/layout/chatbot.css">
+
+
+    <link rel="stylesheet" href="../../../src/css/components/popup-card.css">
 </head>
 
 <body>
@@ -52,8 +56,9 @@
         <nav class="nav__container">
 
             <figure class="nav__figure">
-                <a href="./index.html"><img src="./assets/icons/logo.svg" class="nav__logo" alt="Logotipo de Conectando!"></a>
-                
+                <a href="../../index.html"><img src="../../assets/icons/logo.svg" class="nav__logo"
+                        alt="Logotipo de Conectando!"></a>
+
             </figure>
 
             <label class="nav__toggle">
@@ -63,15 +68,15 @@
             <ul class="nav__list">
 
                 <li class="nav__item">
-                    <a href="./pages/about/about-us.html" class="nav__link">Conócenos</a>
+                    <a href="../about/about-us.html" class="nav__link">Conócenos</a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="./pages/grade-calculator/calculator.html" class="nav__link">Calculadora de notas</a>
+                    <a href="../grade-calculator/calculator.html" class="nav__link">Calculadora de notas</a>
                 </li>
 
                 <li class="nav__item">
-                    <a href="./pages/resources/resources.html" class="nav__link">Recursos</a>
+                    <a href="./resources.html" class="nav__link">Recursos</a>
                 </li>
 
 
@@ -81,19 +86,20 @@
 
     </header>
     <main>
-        <!-- BANNER -->
-        <section class="hero">
-            <div class="hero__container">
-                <p class="hero__subtitle">RECURSOS/CURSOS Y CERTIFICACIONES</p>
-                <h1 class="hero__title">Cursos y Certificaciones que te pueden interesar</h1>
-                <div class="hero__actions">
-                    <a href="#" class="hero_btn hero_btn--primary">Revisar plataformas</a>
-                    <a href="#" class="hero_btn hero_btn--secondary">Revisar rutas de aprendizaje</a>
+
+        <section>
+            <div id="hero">
+                <h2 style="color: aliceblue;">RECURSOS</h2>
+                <h1>Cursos y Certificaciones que te pueden interesar</h1>
+
+                <div class="container__btn">
+                    <a href="#recursos-academicos" class="hero__btn-ra">Revisar plataformas</a>
                 </div>
+
             </div>
         </section>
         <!-- RECURSOS ACADEMICOS -->
-        <section class="content-section">
+        <section id="recursos-academicos" class="content-section">
             <button class="carrusel-btn left" onclick="moverCarrusel(-1)">&#10094;</button>
             <div class="carrusel-container" id="carrusel">
 
@@ -162,42 +168,108 @@
         </section>
 
         <!-- PREGUNTAS FRECUENTES -->
-        <section class="faq-section">
-            <h3 class="faq-subtitle">PREGUNTAS FRECUENTES</h3>
-            <h2 class="faq-title">Encuentra respuestas rápidas a tus dudas más comunes.</h2>
-            <div class="faq-container">
-                <details>
-                    <summary>¿Qué tipo de recursos encontraré en esta plataforma?</summary>
-                    <p>Cursos, webinars, artículos, herramientas y más recursos educativos.</p>
-                </details>
-                <details>
-                    <summary>¿Los recursos son exclusivamente para estudiantes de la Científica?</summary>
-                    <p>No, están disponibles para cualquier persona interesada.</p>
-                </details>
-                <details>
-                    <summary>¿Debo registrarme para usar todas las funcionalidades?</summary>
-                    <p>En algunos casos sí, como para guardar tu progreso o recibir certificados.</p>
-                </details>
-                <details>
-                    <summary>¿En qué dispositivos puedo usar la plataforma?</summary>
-                    <p>Está optimizada para computadoras, tablets y smartphones.</p>
-                </details>
-                <details>
-                    <summary>¿Puedo aportar recursos o ayudar a mejorar la plataforma?</summary>
-                    <p>Sí, puedes contactarnos para colaborar o enviar sugerencias.</p>
-                </details>
+        <section id="preguntas-frecuentes">
+
+            <div class="container">
+                <div class="heading__2">
+                    <p class="p">preguntas frecuentes</p>
+                    <h2>Encuentra respuestas rápidas a tus dudas más comunes</h2>
+                </div>
+
+
+                <div class="tab">
+                    <input type="radio" name="abrir" id="acc1" />
+                    <label for="acc1">
+                        <h2>01</h2>
+                        <h3>¿Qué tipo de herramientas ofrece esta plataforma?</h3>
+                    </label>
+                    <div class="content">
+                        <p>
+                            Nuestra web ofrece calculadora de promedios, recursos académicos, un foro estudiantil y
+                            diferentes rutas de aprendizaje para que puedas tomar alguna y puedas seguirla.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input type="radio" name="abrir" id="acc2" />
+                    <label for="acc2">
+                        <h2>02</h2>
+                        <h3>¿Es necesario registrarse para usar las funciones?</h3>
+                    </label>
+                    <div class="content">
+                        <p>
+                            Actualmente, todas las funciones son de libre acceso y no requieren registro. En futuras
+                            versiones del sistema web se implementará un sistema de cuentas para guardar tu progreso y
+                            configuraciones.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input type="radio" name="abrir" id="acc3" />
+                    <label for="acc3">
+                        <h2>03</h2>
+                        <h3>¿Quiénes pueden usar esta plataforma?</h3>
+                    </label>
+                    <div class="content">
+                        <p>
+                            Está diseñada principalmente para estudiantes universitarios del Perú, pero puede ser útil
+                            para cualquier estudiante que busque organizar mejor su vida académica.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input type="radio" name="abrir" id="acc4" />
+                    <label for="acc4">
+                        <h2>04</h2>
+                        <h3>¿Los recursos educativos son gratuitos?</h3>
+                    </label>
+                    <div class="content">
+                        <p>
+                            Sí, todos los materiales disponibles (PDFs, guías, videos, enlaces) son gratuitos y
+                            seleccionados de fuentes confiables.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input type="radio" name="abrir" id="acc5" />
+                    <label for="acc5">
+                        <h2>05</h2>
+                        <h3>¿Puedo colaborar con esta plataforma?</h3>
+                    </label>
+                    <div class="content">
+                        <p>
+                            ¡Nos encantaría! Si deseas aportar recursos, ideas o participar en el desarrollo futuro,
+                            puedes escribirnos desde el formulario de contacto.
+                        </p>
+                    </div>
+                </div>
+
             </div>
+
         </section>
 
         <!-- CONTACTO -->
-        <section class="contact-section">
-            <h3 class="contact-subtitle">A TRAVÉS DE NOSOTROS</h3>
-            <h2 class="contact-title">📬 Contáctanos</h2>
-            <p class="contact-text">
-                ¿Tienes una sugerencia o quieres colaborar?<br>
-                Escríbenos a: <a href="mailto:contacto@conectando.pe">contacto@conectando.pe</a><br>
-                Síguenos en nuestras redes para más novedades y actualizaciones.
-            </p>
+
+        <section id="cta">
+
+            <div class="container">
+                <div class="heading__2">
+                    <p class="p">A TRAVÉS DE NOSOTROS</p>
+                    <h2>Conctáctanos</h2>
+                </div>
+
+                <div>
+                    <p>¿Tienes una sugerencia o quieres colaborar?<br>
+                        Escríbenos a: <a href="mailto:contacto@conectando.pe">contacto@conectando.pe</a>
+                        y síguenos en nuestras redes para más novedades y actualizaciones.
+                    </p>
+                </div>
+            </div>
+
         </section>
 
 
@@ -216,59 +288,76 @@
 
 
     <footer>
-        <div id="fdivpadre">
-            <div id="fdiv1">
-                <img src="../../assets/icons/logo.svg">
-                <input type="text"
-                    placeholder=" ✉︎ Ingresa tu correo para que te enteres de las últimas novedades de la página web">
-                <a href="#" type="buttom"> Suscribete</a>
+        <div class="container">
+
+            <div class="footer-row">
+                <div class="footer-links">
+                    <img src="../../assets/icons/logo-white.svg" alt="Logotipo de Conectando!">
+                </div>
             </div>
 
-            <div id="fdiv2">
-                <div id="fdiv21">
-                    <h3 id="fh3">Sobre nosotros</h3>
-                    <a id="fa" href="#">Conócenos</a>
-                    <a id="fa" href="#">Términos de uso</a>
-                    <a id="fa" href="#">Politicas de privacidad</a>
-                    <a id="fa" href="#">Quiero pertenecer a GP-TBF</a>
-                </div>
+            <div class="footer-row">
 
-                <div id="fdiv22">
-                    <h3 id="fh3">Comunidad</h3>
-                    <a id="fa" href="#">Calculadora de notas</a>
-                    <a id="fa" href="#">Foro y discusiones</a>
-                    <a id="fa" href="#">Cursos y material educativo</a>
-                    <a id="fa" href="#">La comunidad</a>
-                </div>
+                <div class="footer-divider"></div>
 
-                <div id="fdiv23">
-                    <h3 id="fh3">Atención al usuario</h3>
-                    <a id="fa" href="#">Preguntas frecuentes</a>
-                    <a id="fa" href="#">Portal de ayuda</a>
-                    <a id="fa" href="#">Formulario de consultas</a>
-                    <a id="fa" href="#">Quisiera sugerir alguna mejora</a>
-                </div>
+            </div>
 
-                <div id="fdiv24">
-                    <h3 id="fh3">Síguenos en</h3>
-                    <div>
-                        <img src="../../assets/icons/youtube.svg">
-                        <img src="../../assets/icons/facebook.svg">
-                        <img src="../../assets/icons/twitter.svg">
-                        <img src="../../assets/icons/instagram.svg">
-                        <img src="../../assets/icons/linkedin.svg">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Sobre nosotros</h4>
+                    <ul>
+                        <li><a href="">Conócenos</a></li>
+                        <li><a href="">Términos de uso</a></li>
+                        <li><a href="">Políticas de privacidad</a></li>
+                        <li><a href="">Quiero pertenecer a GP-TBF</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Comunidad</h4>
+                    <ul>
+                        <li><a href="">Calculadora de notas</a></li>
+                        <li><a href="">Foro y discusiones</a></li>
+                        <li><a href="">Cursos y rutas de aprendizaje</a></li>
+                        <li><a href="">La comunidad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Atención al usuario</h4>
+                    <ul>
+                        <li><a href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+                        <li><a href="">Portal de ayuda</a></li>
+                        <li><a href="">Formulario de consultas</a></li>
+                        <li><a href="">Quiero sugerir algunas mejoras</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social-media">
+                    <h4>Síguenos en</h4>
+                    <div class="social-links">
+                        <a href=""><img src="../../assets/icons/linkedin-logo-white.svg" alt="Logo de LinkedIn"></a>
+                        <a href=""><img src="../../assets/icons/github-logo-white.svg" alt="Logo de Github"></a>
+                        <a href=""><img src="../../assets/icons/instagram-logo-white.svg" alt="Logo de Instagram"></a>
                     </div>
                 </div>
+
             </div>
 
-            <div id="fdiv3">
-                <p>Panamericana Sur KM 19, Villa - Lima, Perú.</p>
-                <p>Conectando! by GP - TBF @ 2025. Todos los derechos reservados.</p>
+            <div class="footer-row">
+
+                <div class="footer-divider"></div>
+
             </div>
 
+            <div class="footer-row">
+
+                <div class="footer-lower">
+                    <p>Panamericana Sur KM 19, Villa - Lima, Perú.</p>
+                    <p>© 2025 Conectando! by GP - TBF. Todos los derechos reservados</p>
+                </div>
+
+            </div>
         </div>
-
     </footer>
     <script src="../../../src/js/recursos.js"></script>
 </body>
+
 </html>

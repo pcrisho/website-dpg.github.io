@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #0F62FE; /* Azul */
+    --color-text: #21272A; /* Gris oscuro */
+    --color-text-h2: #001D6C; /* 2do fondo */
+    --background-color-2: #F2F4F8;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--color-text);
+    background-color: #dde9f0;
+}
+
+
+/* Main */
+main {
+    background-color: #dde9f0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Título */
+#titulo {
+    width: 100%;
+    text-align: center;
+    background-color: #dde9f0; /* Asegurar que el fondo coincida con main */
+    margin: 0;
+    padding: 2rem 0; /* Espaciado vertical, sin padding lateral */
+    border: none;
+    box-shadow: none;
+    display: block; /* Asegurar que ocupe todo el ancho */
+}
+
+/* Título específico */
+h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-top: 1rem;
+    color: var(--color-text);
+    border: none;
+    width: 100%; /* Asegurar que el texto ocupe todo el ancho del contenedor */
+    padding: 0 5%; /* Pequeño padding lateral para no pegar el texto a los bordes */
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin: 1rem 0 0.5rem;
+    color: var(--color-text-h2);
+}
+
+#adiv {
+    display: flex;
+    flex-direction: row; /* Por defecto, para PC */
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #dde9f0;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Media query para celulares (pantallas menores a 768px, por ejemplo) */
+@media (max-width: 768px) {
+    #adiv {
+        flex-direction: column; /* Cambia a columna en celulares */
+        align-items: center; /* Alinea los elementos al centro en columna */
+    }
+}
+
+aside, #notas {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    margin: 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#escp, #resp {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    color: var(--color-text);
+}
+
+#escsel {
+    width: 100%;
+    max-width: 100%;
+    height: 2.5rem;
+    font-size: 1rem;
+    color: gray;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    padding: 0.5rem;
+    outline: none;
+    margin: 0.5rem 0;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="gray" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+}
+
+#txesc {
+    width: 100%;
+    max-width: 100%;
+    height: 2.5rem;
+    font-size: 0.9rem;
+    color: gray;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    resize: none;
+    margin: 0.5rem 0;
+    pointer-events: none;
+    user-select: none;
+}
+
+#txtnu{
+    width: 14rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+    color: gray;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    resize: none;
+    margin: 0.5rem 0.2rem;
+    user-select: none;
+}
+
+#txtne{
+    width: 4rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
+    color: gray;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    resize: none;
+    margin: 0.5rem 0.2rem;
+    user-select: none;
+}
+
+#txare {
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.9rem;
+    color: gray;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    resize: none;
+    margin: 0.5rem 0;
+    pointer-events: none;
+    user-select: none;
+    padding-bottom: 1.8rem;
+}
+
+#txare:nth-child(2) { /* "Promedio Ponderado" */
+    height: 2.5rem;
+}
+
+#txare:nth-child(4) { /* "Estado" */
+    height: 4rem;
+}
+
+#txare:nth-child(6) { /* "Juego de notas" */
+    height: 6rem;
+}
+
+#notas button {
+    width: 48%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0.5rem 1% 0 0;
+}
+
+#clear-btn {
+    background-color: #e0e0e0;
+    color: var(--color-text);
+}
+
+#calculate-btn {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+#notas button:hover {
+    opacity: 0.9;
+}
+
+#divsec {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: white;
+}
+
+#sabajo1, #sabajo2 {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#sabajo1 table {
+    width: 100%;
+    display: block;
+}
+
+#sabajo1 tr, #sabajo1 td {
+    display: block;
+    text-align: center;
+}
+
+#sabajo1 img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto 1rem;
+}
+
+#sabajo1 h4, #sabajo2 h4 {
+    font-size: 0.9rem;
+    color: var(--color-text-h2);
+    margin-bottom: 0.5rem;
+}
+
+#sabajo1 h2, #sabajo2 h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+#sabajo2 p {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+body, html {
+    overflow-x: hidden; /* Elimina cualquier scroll horizontal innecesario */
+}
+
+input, textarea, select, button {
+    max-width: 100%; /* Evita que se pasen del contenedor */
+}

@@ -8,7 +8,7 @@ const chatbotToggler = document.querySelector("#chatbot-toggler");
 const CloseChatbot = document.querySelector("#close-chatbot");
 
 // API Setup
-const API_KEY = "AIzaSyCIV28jexNlWAPDuRzMOX4CKY0Y4uIXd6o";
+const API_KEY = "AIzaSyCFAMjI-kZNJKSrUXPiLuAIbpAxs5oO1oA";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 const userData = {
@@ -122,10 +122,27 @@ const generateBotResponse = async (incomingMessageDiv) => {
   } catch (error) {
     console.error(error);
     incomingMessageDiv.classList.remove("thinking");
-    incomingMessageDiv.innerHTML = `
-      ${botAvatarSVG}
-      <div class="message-text" style="color: #ff0000;">${error.message}</div>
+
+    let userFriendlyMessage;
+
+    if (error.message.toLowerCase().includes("quota")) {
+      userFriendlyMessage = `
+      Hemos superado el límite de uso disponible para este servicio. 
+      Por favor revisa la configuración de la API o intenta más tarde. 
+      <a href="https://ai.google.dev/gemini-api/docs/rate-limits" target="_blank">Ver más información</a>.
     `;
+    } else if (error.message.toLowerCase().includes("overloaded")) {
+      userFriendlyMessage = `
+      El modelo está sobrecargado en este momento. Por favor, intenta de nuevo en unos minutos.
+    `;
+    } else {
+      userFriendlyMessage = `Error inesperado: ${error.message}`;
+    }
+
+    incomingMessageDiv.innerHTML = `
+    ${botAvatarSVG}
+    <div class="message-text" style="color: #ff0000;">${userFriendlyMessage}</div>
+  `;
   } finally {
     userData.file = {};
     scrollToLatestMessage();
